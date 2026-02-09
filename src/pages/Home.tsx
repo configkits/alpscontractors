@@ -12,7 +12,7 @@ import {
 import { Check, Phone, Mail, MapPin, ChevronRight, Star, Facebook, Linkedin, ChevronDown } from "lucide-react";
 import heroBg from "../assets/hero-bg.png";
 import serviceOffice from "../assets/service-office.png";
-import logo from "../assets/ALPS+logo-bf8ad8f0-1920w_1769959157217.webp";
+import logo from "../assets/alpslogo.jpg";
 import blog1 from "../assets/blog-1.png";
 import blog2 from "../assets/blog-2.png";
 import blog3 from "../assets/blog-3.png";
