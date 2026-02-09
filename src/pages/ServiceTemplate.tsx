@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Check, ChevronRight, Phone } from "lucide-react";
+import { Check, Phone } from "lucide-react";
 import { Link } from "wouter";
-import logo from "@assets/ALPS+logo-bf8ad8f0-1920w_1769959157217.webp";
+import logo from "../assets/alpslogo.jpg";
 
 export default function ServiceTemplate({ 
   title, 
@@ -10,7 +10,6 @@ export default function ServiceTemplate({
   description, 
   features, 
   benefits,
-  image 
 }: { 
   title: string; 
   subtitle: string; 
