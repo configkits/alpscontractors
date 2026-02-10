@@ -81,11 +81,11 @@ export default function Home() {
             className="pointer-events-auto group inline-flex items-center gap-4 rounded-full bg-black/60 backdrop-blur-md px-8 py-3 border border-white/20 shadow-2xl hover:bg-black/80 hover:border-accent/60 transition-all duration-300"
           >
             <span className="text-[10px] font-bold uppercase tracking-[0.35em] text-white/70">
-              Auckland
+              NZ
             </span>
-            <span className="text-lg md:text-2xl font-serif font-bold leading-none">
-              <span className="text-white">Floor</span>{" "}
-              <span className="text-accent">Prep Experts</span>
+            <span className="text-lg md:text-xl font-serif font-bold leading-none">
+              <span className="text-white">Industrial</span>{" "}
+              <span className="text-accent">Resin Experts</span>
             </span>
             <span className="hidden md:flex items-center gap-1 text-[10px] font-bold uppercase tracking-[0.3em] text-accent">
               Talk to a specialist
