@@ -1,16 +1,10 @@
-import { Link } from "wouter";
 import { 
   Check, 
-  Phone, 
-  Mail, 
   ChevronRight, 
-  Star, 
-  Facebook, 
-  Linkedin, 
+  Star,  
 } from "lucide-react";
 import heroBg from "../assets/hero-bg.png";
 import serviceOffice from "../assets/service-office.png";
-import logo from "../assets/alpslogo.jpg";
 import blog1 from "../assets/blog-1.png";
 import blog2 from "../assets/blog-2.png";
 import blog3 from "../assets/blog-3.png";
