@@ -8,6 +8,7 @@ import serviceOffice from "../assets/service-office.png";
 import blog1 from "../assets/blog-1.png";
 import blog2 from "../assets/blog-2.png";
 import blog3 from "../assets/blog-3.png";
+import vector from "../assets/vector/Vector.svg";
 import waterproofing from "../assets/waterproofing.png";
 import partner1 from "../assets/partner-1.png";
 import partner2 from "../assets/partner-2.png";
@@ -62,11 +63,32 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <div className="absolute right-110 top-22 h-full w-[180vh] pointer-events-none opacity-25 md:opacity-50 lg:opacity-100 translate-x-1/4">
+          <img src={vector} alt="" className="h-full w-full object-contain object-right" />
+        </div>
         
-        {/* Floating Promo */}
-        <div className="hidden sm:flex absolute top-12 right-12 bg-accent text-white p-8 rounded-full w-40 h-40 md:w-48 md:h-48 flex-col justify-center items-center text-center rotate-12 shadow-xl border-4 border-white/20">
-          <span className="text-[10px] font-bold uppercase tracking-widest mb-1">NZ Trusted</span>
-          <span className="text-base md:text-lg font-serif italic leading-tight">Industrial Resin Experts</span>
+        {/* Floating Promo - Interactive Header Strip */}
+        <div className="hidden sm:flex absolute top-6 inset-x-0 justify-center pointer-events-none">
+          <a
+            href="#contact"
+            className="pointer-events-auto group inline-flex items-center gap-4 rounded-full bg-black/60 backdrop-blur-md px-8 py-3 border border-white/20 shadow-2xl hover:bg-black/80 hover:border-accent/60 transition-all duration-300"
+          >
+            <span className="text-[10px] font-bold uppercase tracking-[0.35em] text-white/70">
+              Auckland
+            </span>
+            <span className="text-lg md:text-2xl font-serif font-bold leading-none">
+              <span className="text-white">Floor</span>{" "}
+              <span className="text-accent">Prep Experts</span>
+            </span>
+            <span className="hidden md:flex items-center gap-1 text-[10px] font-bold uppercase tracking-[0.3em] text-accent">
+              Talk to a specialist
+              <ChevronRight
+                size={16}
+                className="transition-transform duration-300 group-hover:translate-x-1"
+              />
+            </span>
+          </a>
         </div>
       </section>
 
@@ -166,6 +188,15 @@ export default function Home() {
                 <p className="font-serif italic text-lg leading-snug">"Quality that stands the test of time."</p>
               </div>
             </div>
+            {/* <div className="absolute inset-0 pointer-events-none  ">
+              <svg 
+                viewBox="0 0 1000 1000" 
+                className="absolute -right-[50%] top-[138%] w-[140%] h-[140%] opacity-50 text-accent"
+                fill="currentColor"
+              >
+                <path d="M100 850 L350 850 L600 150 L850 850 L950 850 L650 50 L550 50 Z" />
+              </svg>
+            </div> */}
           </div>
         </div>
       </section>
@@ -382,7 +413,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 md:py-24 bg-primary text-white relative overflow-hidden">
+      <section id="contact" className="py-20 md:py-24 bg-primary text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-accent/5 skew-x-12 translate-x-24" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto">
@@ -412,6 +443,9 @@ export default function Home() {
 
       {/* Footer */}
       <Footer />
+      <div className="absolute right-110 top-250 h-full w-[180vh] pointer-events-none opacity-25  translate-x-1/4">
+          <img src={vector} alt="" className="h-full w-full object-contain object-right" />
+        </div>
     </div>
   );
 }

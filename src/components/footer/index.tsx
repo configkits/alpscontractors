@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="bg-primary pt-20 pb-10 border-t border-white/5">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             <div className="space-y-6 text-center sm:text-left bg-white/10 p-6 rounded-lg">
               <img src={logo} alt="ALPS Logo" className="h-10 w-auto mx-auto sm:mx-0" />
               <p className="text-sm text-white/40 leading-relaxed max-w-xs mx-auto sm:mx-0 mt-6">
