@@ -1,9 +1,14 @@
+import Banner from "@/components/banner";
+import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 export default function Contact() {
   return (
+    <div className="min-h-screen bg-[#fcfdfc] font-['Lexend_Deca']">
+    <Banner />
+      <Navbar />
     <div className="py-24 bg-white">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
@@ -22,6 +27,7 @@ export default function Contact() {
           </form>
         </div>
       </div>
+    </div>
     </div>
   );
 }
