@@ -15,10 +15,7 @@ import logo from "../../assets/alpslogo.jpg";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
-
-type Props = {}
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     
   return (
@@ -98,7 +95,7 @@ const Navbar = (props: Props) => {
               <Link href="/our-work" className="text-lg font-bold text-primary py-2 border-b border-muted" onClick={() => setIsMobileMenuOpen(false)}>Our Work</Link>
               <Link href="/contact" className="text-lg font-bold text-primary py-2 border-b border-muted" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
               <Link href="/blog" className="text-lg font-bold text-primary py-2 border-b border-muted" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link>
-              <Button className="w-full bg-accent hover:bg-accent/90 text-white font-bold py-6 mt-2">
+              <Button className="w-full bg-accent hover:bg-accent/90 text-white font-bold py-4 mt-2">
                 GET A QUOTE
               </Button>
             </div>

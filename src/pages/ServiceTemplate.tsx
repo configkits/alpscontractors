@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Check, ChevronRight, Phone } from "lucide-react";
-import { Link } from "wouter";
-import logo from "../assets/alpslogo.jpg";
+import { Check, Phone } from "lucide-react";
+import Banner from "@/components/banner";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 export default function ServiceTemplate({ 
   title, 
@@ -10,7 +11,6 @@ export default function ServiceTemplate({
   description, 
   features, 
   benefits,
-  image 
 }: { 
   title: string; 
   subtitle: string; 
@@ -22,16 +22,8 @@ export default function ServiceTemplate({
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation Header */}
-      <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b px-4 sm:px-6 py-4 flex justify-between items-center">
-        <Link href="/">
-          <img src={logo} alt="ALPS Logo" className="h-8 sm:h-10 w-auto cursor-pointer" />
-        </Link>
-        <Link href="/contact">
-          <Button className="bg-accent hover:bg-accent/90 text-white font-bold text-xs sm:text-sm px-4 sm:px-6">
-            GET A QUOTE
-          </Button>
-        </Link>
-      </nav>
+      <Banner />
+      <Navbar />
 
       {/* Hero Section */}
       <section className="relative py-16 md:py-24 bg-primary text-white overflow-hidden">
@@ -100,6 +92,7 @@ export default function ServiceTemplate({
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

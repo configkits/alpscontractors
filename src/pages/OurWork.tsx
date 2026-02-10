@@ -1,4 +1,5 @@
 import Banner from "@/components/banner";
+import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 
 export default function OurWork() {
@@ -21,6 +22,7 @@ export default function OurWork() {
         </div>
       </div>
     </div>
+    <Footer />
     </div>
   );
 }
