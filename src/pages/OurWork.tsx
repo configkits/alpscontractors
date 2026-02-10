@@ -1,5 +1,11 @@
+import Banner from "@/components/banner";
+import Navbar from "@/components/navbar";
+
 export default function OurWork() {
   return (
+    <div className="min-h-screen bg-[#fcfdfc] font-['Lexend_Deca']">
+      <Banner />
+      <Navbar />
     <div className="py-24 bg-white">
       <div className="container mx-auto px-6">
         <h1 className="text-4xl md:text-6xl font-serif text-primary mb-8">Our Work</h1>
@@ -14,6 +20,7 @@ export default function OurWork() {
           ))}
         </div>
       </div>
+    </div>
     </div>
   );
 }
