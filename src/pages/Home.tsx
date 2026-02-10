@@ -64,9 +64,15 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute right-110 top-22 h-full w-[180vh] pointer-events-none opacity-25 md:opacity-50 lg:opacity-100 translate-x-1/4">
-          <img src={vector} alt="" className="h-full w-full object-contain object-right" />
+        <div className="absolute right-120 top-0 h-full w-[150vw] lg:w-[150vw] pointer-events-none opacity-25 md:opacity-50 lg:opacity-100 translate-x-1/4">
+          <img
+            src={vector}
+            alt=""
+            className="h-full w-full object-contain object-right"
+          />
         </div>
+
+
         
         {/* Floating Promo - Interactive Header Strip */}
         <div className="hidden sm:flex absolute top-6 inset-x-0 justify-center pointer-events-none">
