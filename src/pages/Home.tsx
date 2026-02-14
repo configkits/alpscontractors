@@ -10,8 +10,6 @@ import blog2 from "../assets/blog-2.png";
 import blog3 from "../assets/blog-3.png";
 import vector from "../assets/vector/Vector.svg";
 import waterproofing from "../assets/waterproofing.png";
-import partner1 from "../assets/partner-1.png";
-import partner2 from "../assets/partner-2.png";
 import client1 from "../assets/client-1.png";
 import client2 from "../assets/client-2.png";
 import prodEpoxy from "../assets/product-epoxy.png";
@@ -25,6 +23,7 @@ import { Textarea } from "@/components/ui/textarea";
 import Navbar from "@/components/navbar";
 import Banner from "@/components/banner";
 import Footer from "@/components/footer";
+import { DATA } from "@/data";
 
 export default function Home() {
   return (
@@ -45,56 +44,41 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/40" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-3xl text-white">
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif mb-6 leading-tight">
-              New Zealand's<br/>
-              <span className="text-accent">Industrial Resin</span> &<br/>
-              Safety Specialists.
+            <h1 className="text-4xl sm:text-4xl md:text-6xl font-serif mb-5 leading-tight">
+              Auckland region's <br/>
+              <span className="text-accent">Industrial Resin Flooring</span><br/>
+              & Floor Coating Specialists.
             </h1>
+            <p className="text-xl md:text-3xl text-accent max-w-xl leading-relaxed">
+            Delivering Excellence in All We Do
+            </p>
             <p className="text-lg md:text-xl mb-8 text-white/80 max-w-xl leading-relaxed">
               Professional floor systems and anti-slip solutions for industrial, commercial, and safety-critical environments.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-accent hover:bg-accent/90 text-white px-8 py-5 text-lg font-bold shadow-lg shadow-accent/20">
-                View Systems
-              </Button>
-              <Button variant="outline" className="border-white/30 text-white hover:bg-white hover:text-primary px-8 py-5 text-lg font-bold backdrop-blur-sm">
-                Our Services
-              </Button>
+
+            {/* Floating Promo - Interactive Header Strip */}
+            <div className="flex justify-center pointer-events-none">
+              <a
+                href="#contact"
+                className="pointer-events-auto group inline-flex items-center gap-4 rounded-full bg-black/60 backdrop-blur-md px-8 py-3 border border-white/20 shadow-2xl hover:bg-black/80 hover:border-accent/60 transition-all duration-300"
+              >
+                <span className="text-[10px] font-bold uppercase tracking-[0.35em] text-white/70">
+                  NZ
+                </span>
+                <span className="text-lg md:text-xl font-serif font-bold leading-none">
+                  <span className="text-white">Industrial</span>{" "}
+                  <span className="text-accent">Resin Experts</span>
+                </span>
+                <span className="hidden md:flex items-center gap-1 text-[10px] font-bold uppercase tracking-[0.3em] text-accent">
+                  Talk to a specialist
+                  <ChevronRight
+                    size={16}
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  />
+                </span>
+              </a>
             </div>
           </div>
-        </div>
-
-        <div className="absolute right-120 top-0 h-full w-[150vw] lg:w-[150vw] pointer-events-none opacity-25 md:opacity-50 lg:opacity-100 translate-x-1/4">
-          <img
-            src={vector}
-            alt=""
-            className="h-full w-full object-contain object-right"
-          />
-        </div>
-
-
-        
-        {/* Floating Promo - Interactive Header Strip */}
-        <div className="hidden sm:flex absolute top-6 inset-x-0 justify-center pointer-events-none">
-          <a
-            href="#contact"
-            className="pointer-events-auto group inline-flex items-center gap-4 rounded-full bg-black/60 backdrop-blur-md px-8 py-3 border border-white/20 shadow-2xl hover:bg-black/80 hover:border-accent/60 transition-all duration-300"
-          >
-            <span className="text-[10px] font-bold uppercase tracking-[0.35em] text-white/70">
-              NZ
-            </span>
-            <span className="text-lg md:text-xl font-serif font-bold leading-none">
-              <span className="text-white">Industrial</span>{" "}
-              <span className="text-accent">Resin Experts</span>
-            </span>
-            <span className="hidden md:flex items-center gap-1 text-[10px] font-bold uppercase tracking-[0.3em] text-accent">
-              Talk to a specialist
-              <ChevronRight
-                size={16}
-                className="transition-transform duration-300 group-hover:translate-x-1"
-              />
-            </span>
-          </a>
         </div>
       </section>
 
@@ -135,7 +119,7 @@ export default function Home() {
             <div>
               <h2 className="text-xs font-bold text-accent uppercase tracking-[0.3em] mb-6 block text-center lg:text-left">Expertise</h2>
               <h3 className="text-3xl md:text-5xl font-serif text-primary mb-8 leading-tight text-center lg:text-left">
-                Specialists in Flooring & Waterproofing Systems
+                Specialists in Resin flooring, waterproofing & Slip resistance systems
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-8 text-lg italic border-l-4 border-accent pl-6 text-center lg:text-left mx-auto lg:mx-0">
                 We work with high-performance solutions designed for commercial, industrial, and residential spaces. Our systems deliver strength and durability in heavy-use environments.
@@ -143,11 +127,11 @@ export default function Home() {
               
               <div className="grid sm:grid-cols-2 gap-4 mt-12 max-w-xl mx-auto lg:mx-0">
                 {[
-                  "Epoxy and polyurethane flooring",
-                  "Liquid-applied membranes",
-                  "Anti-slip safety finishes",
-                  "Fast-curing resin systems",
-                  "Chemical-resistant coatings"
+                  "Epoxy, Polyurethane & MMA",
+                  "Liquid Applied Membranes",
+                  "Anti slip testing & Slip Resistance solutions",
+                  "Heat & Chemical resistance Coatings",
+                  "UV protective applications"
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <div className="w-5 h-5 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
@@ -227,7 +211,7 @@ export default function Home() {
             {/* Sidebar */}
             <div className="lg:w-1/4">
               <div className="lg:sticky lg:top-28 space-y-4">
-                <h3 className="text-xs font-bold text-accent uppercase tracking-[0.4em] mb-6 text-center lg:text-left">Our Specializations</h3>
+                <h3 className="text-lg md:text-xl font-bold text-accent uppercase tracking-[0.4em] mb-6 text-center lg:text-left">Our Specializations</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3">
                   {[
                     "INDUSTRIAL RESIN FLOORING SOLUTIONS",
@@ -241,7 +225,7 @@ export default function Home() {
                       key={i} 
                       className="p-4 bg-white rounded-xl border border-border shadow-sm hover:border-accent/50 hover:shadow-md transition-all cursor-pointer group flex items-center justify-between"
                     >
-                      <span className="text-[10px] font-bold text-primary group-hover:text-accent transition-colors leading-tight">
+                      <span className="text-[14px] font-bold text-primary group-hover:text-accent transition-colors leading-tight">
                         {item}
                       </span>
                       <ChevronRight size={14} className="text-muted-foreground group-hover:text-accent group-hover:translate-x-1 transition-all" />
@@ -254,7 +238,7 @@ export default function Home() {
             {/* Product Grid */}
             <div className="lg:w-3/4">
               <div className="mb-12 text-center lg:text-left">
-                <h2 className="text-3xl md:text-4xl font-serif text-primary mb-4">ALPS Product Systems</h2>
+                <h2 className="text-3xl md:text-4xl font-serif text-primary mb-4">ALPS Flooring Systems</h2>
                 <div className="w-20 h-1.5 bg-accent mb-6 rounded-full mx-auto lg:mx-0" />
                 <p className="text-muted-foreground max-w-2xl italic text-lg leading-relaxed mx-auto lg:mx-0">
                   Precision-engineered resin and safety solutions for New Zealand's most demanding environments.
@@ -265,7 +249,7 @@ export default function Home() {
                   { title: "Epoxy Resin Systems", desc: "Heavy-duty epoxy systems designed for chemical resistance and extreme durability.", img: prodEpoxy },
                   { title: "Polyurethane Screeds", desc: "Thermal shock resistant flooring ideal for food processing and industrial kitchens.", img: prodPU },
                   { title: "Rapid Cure Coatings", desc: "Fast-turnaround floor solutions that minimize downtime for busy commercial spaces.", img: prodRapid },
-                  { title: "Industrial Slip Guard", desc: "Certified anti-slip treatments that meet or exceed NZ safety standards.", img: prodSlip }
+                  { title: "Slip Resistance Coating", desc: "Certified anti-slip treatments that meet or exceed NZ safety standards.", img: prodSlip }
                 ].map((product, i) => (
                   <Card key={i} className="group hover:shadow-2xl transition-all duration-500 border-none overflow-hidden bg-white rounded-2xl">
                     <div className="h-56 md:h-64 overflow-hidden relative">
@@ -306,10 +290,12 @@ export default function Home() {
           <div className="flex whitespace-nowrap animate-marquee">
             {[...Array(2)].map((_, i) => (
               <div key={i} className="flex gap-8 px-4">
-                {[partner1, partner2, partner1, partner2, partner1, partner2].map((img, idx) => (
-                  <div key={idx} className="w-48 h-28 bg-muted/30 rounded-xl flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100 border border-transparent hover:border-accent/20 flex-shrink-0">
-                    <img src={img} alt={`Partner ${idx}`} className="max-h-full max-w-full object-contain" />
+                {DATA.partner.map((data, idx) => (
+                  <a href={data.url}>
+                  <div key={`${data.name}-${idx}`} className="w-48 h-28 bg-muted/30 rounded-xl flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100 border border-transparent hover:border-accent/20 flex-shrink-0">
+                    <img src={data.images} alt={`Partner ${data.name}`} className="max-h-full max-w-full object-contain" />
                   </div>
+                  </a>
                 ))}
               </div>
             ))}
