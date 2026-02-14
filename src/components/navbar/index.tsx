@@ -61,14 +61,16 @@ const Navbar = () => {
                     path: "/services/pool-coating",
                   },
                 ].map((service, i) => (
+                  <Link href={service.path} className="w-full">
                   <DropdownMenuItem
                     key={i}
                     className="hover:bg-muted cursor-pointer py-3 px-4 text-sm text-primary font-bold focus:bg-accent focus:text-white transition-colors rounded-md mb-1 last:mb-0"
                   >
-                    <Link href={service.path} className="w-full">
+                    
                       {service.name}
-                    </Link>
+                    
                   </DropdownMenuItem>
+                  </Link>
                 ))}
               </div>
               <div className="w-72">
@@ -83,14 +85,16 @@ const Navbar = () => {
                   },
                   { name: "Why Epoxy Flooring?", path: "/services/why-epoxy" },
                 ].map((service, i) => (
+                  <Link href={service.path} className="w-full">
                   <DropdownMenuItem
                     key={i}
                     className="hover:bg-muted cursor-pointer py-3 px-4 text-sm text-primary font-bold focus:bg-accent focus:text-white transition-colors rounded-md mb-1 last:mb-0"
                   >
-                    <Link href={service.path} className="w-full">
+                    
                       {service.name}
-                    </Link>
+                    
                   </DropdownMenuItem>
+                  </Link>
                 ))}
               
               </div>
