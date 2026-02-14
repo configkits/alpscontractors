@@ -1,4 +1,4 @@
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import type { LatLngExpression } from "leaflet";
 
 const center: LatLngExpression = [-36.8509, 174.7645];
