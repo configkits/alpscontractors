@@ -28,22 +28,50 @@ export default function Contact() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 px-4 gap-4">
-          <div className="rounded-2xl bg-muted/30 border border-border">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 gap-4">
+          <div className="rounded-2xl bg-muted/30 border border-border z-10">
             <MapView />
           </div>
 
-          <form className="grid gap-4 bg-muted/30 p-8 md:p-10 rounded-2xl border border-border">
-            <div className="grid md:grid-cols-2 gap-4">
-              <Input placeholder="Full Name" className="bg-white " />
-              <Input placeholder="Email Address" className="bg-white" />
+          <form className="grid gap-6 bg-muted/30 p-6 md:p-10 rounded-2xl border border-border">
+            {/* Name + Email */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="flex flex-col gap-2">
+                <label className="text-sm font-medium text-primary">
+                  Full Name
+                </label>
+                <Input placeholder="Enter your full name" className="bg-white w-full" />
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <label className="text-sm font-medium text-primary">
+                  Email Address
+                </label>
+                <Input placeholder="Enter your email" className="bg-white w-full" />
+              </div>
             </div>
-            <Input placeholder="Project Location" className="bg-white" />
-            <Textarea
-              placeholder="How can we help?"
-              className="min-h-[150px] bg-white"
-            />
-            <Button className="bg-accent hover:bg-accent/90 text-white font-bold py-3 text-lg">
+
+            {/* Location */}
+            <div className="flex flex-col gap-2">
+              <label className="text-sm font-medium text-primary">
+                Project Location
+              </label>
+              <Input placeholder="Project location" className="bg-white w-full" />
+            </div>
+
+            {/* Message */}
+            <div className="flex flex-col gap-2">
+              <label className="text-sm font-medium text-primary">
+                How can we help?
+              </label>
+              <Textarea
+                placeholder="Tell us about your project"
+                className="min-h-[150px] bg-white w-full"
+              />
+            </div>
+
+            {/* Button */}
+            <Button className="bg-accent hover:bg-accent/90 text-white font-bold py-3 text-lg w-full ">
               SUBMIT INQUIRY
             </Button>
           </form>
@@ -78,7 +106,7 @@ export default function Contact() {
                 <Mail className="text-accent" />
                 <h2 className="text-2xl font-serif text-primary">Email Us</h2>
               </div>
-              <a href="mailto:info@alpscontractors.co.nz">
+              <a href={`mailto:${DATA.email}`}>
                 <p className="text-muted-foreground ">
                   {DATA.email}
                 </p>
