@@ -16,6 +16,8 @@ import Contact from "@/pages/Contact";
 import Blog from "@/pages/Blog";
 import NotFound from "@/pages/NotFound";
 
+import "leaflet/dist/leaflet.css";
+
 function Router() {
   return (
     <Switch>
