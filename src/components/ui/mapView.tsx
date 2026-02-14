@@ -9,6 +9,7 @@ export default function MapView() {
     <MapContainer
       center={center}
       zoom={13}
+      scrollWheelZoom={false}
       style={{ height: "500px", width: "100%", borderRadius: "16px" }}
     >
       <TileLayer

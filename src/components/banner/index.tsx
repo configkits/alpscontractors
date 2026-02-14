@@ -4,6 +4,7 @@ import { DATA } from "@/data";
 import { 
     Phone, Mail, MapPin
 } from "lucide-react";
+import { Link } from "wouter";
 
 
 const Banner = () => {
@@ -47,12 +48,15 @@ const Banner = () => {
               <Linkedin className="w-5 h-5" />
             </a>
           </div>
-          <a href="#" className="hover:text-accent transition-colors">
+          <Link href="/blog" className="hover:text-accent transition-colors ">
             News
-          </a>
-          <a href="#" className="hover:text-accent transition-colors">
-            Contact Us
-          </a>
+          </Link>
+          <Link
+            href="/contact"
+            className="hover:text-accent transition-colors "
+          >
+            Contact
+          </Link>
         </div>
       </div>
     </div>
