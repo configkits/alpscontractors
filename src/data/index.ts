@@ -2,6 +2,17 @@ import Sika from "../assets/parters/g6-640w.png";
 import flowcreate from "../assets/parters/Group-2-1-640w.png";
 import mapei from "../assets/parters/Group-3-1-640w.png";
 import carboline from "../assets/parters/Group-1-1-640w.png";
+import chhsnz from "../assets/certifications/CHASNZ-640w.jpeg";
+import bcito from "../assets/certifications/1-f91fb712-640w.png";
+import sitesafe from "../assets/certifications/photo+-+2-640w.png";
+import sitewise from "../assets/certifications/site+wise-640w.png";
+
+
+import leonards from "../assets/clients/Z1-1920w.png";
+import jacklink from "../assets/clients/Z2-1920w.png";
+import serivcfd from "../assets/clients/Z3-1920w.png";
+import nzpm from "../assets/clients/Z4-1920w.png";
+import naylorlove from "../assets/clients/naylorlove.png";
 
 export const DATA = {
   location: "Auckland, NZ",
@@ -20,6 +31,38 @@ export const DATA = {
     href: "tel:+64212762761"
   },
   email: "info@alpscontractors.co.nz",
+  countup: [
+    {
+      label: "SQUARE METERS COATED",
+      value: 28840
+    },
+    { label: "LINE METERS MARKING", value: 850 },
+    { label: "SQUARE METERS ANTISIPLED", value: 9975 },
+    { label: "PROJECTS COMPLETED", value: 550 },
+  ],
+  certification: [
+    {
+      name:'chhsnz',
+      url:'https://www.chhsnz.co.nz/',
+      images:chhsnz
+    },
+    {
+      name:'bcito',
+      url:'https://www.bcito.org.nz/',
+      images:bcito
+    },
+    {
+      name:'sitewise',
+      url:'https://www.sitewise.co.nz/',
+      images:sitewise
+    },
+    {
+      name:'site safe',
+      url:'https://www.sitesafe.co.nz/',
+      images:sitesafe
+    }
+
+  ],
   partner: [
     {
       name: "Sika",
@@ -45,7 +88,38 @@ export const DATA = {
   client: [
     {
       name: "lenards",
+      images: leonards,
+    },
+    {
+      name: "Taylor-Long",
+      images: "https://cloud-1de12d.becdn.net/media/original/409390d4876bc2e03a0c9fd326525d28/LOGO-Taylor-Long-Secondary-Blue.svg",
+    },
+    {
+      name: "sea link",
       images: "",
     },
+    {
+      name: "Naylor Love",
+      images: naylorlove
+    },
+    {
+      name: "Jack link's",
+      images: jacklink
+    },
+    { name: "Serivcfd",
+      images: serivcfd
+    },
+    {
+      name: "NZPM",
+      images: nzpm
+    },
+    {
+      name: "lagacy construction",
+      images: "https://cdn.prod.website-files.com/65a1bc1e0d444dfb5d573dc7/65b715a17db264a75d46e174_Legacy-Construction-Limited.png"
+    },
+    {
+      name: "Stronghold Group",
+    }
+
   ],
 };
