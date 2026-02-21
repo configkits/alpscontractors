@@ -6,7 +6,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { ChevronDown, Menu, X } from "lucide-react";
-import logo from "../../assets/alpslogo.jpg";
+import logo from "../../assets/alpslogo-green.png";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
