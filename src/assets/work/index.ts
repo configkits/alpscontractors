@@ -1,0 +1,14 @@
+export {default as workImage1} from './208f52d2-770f-40dd-89d0-558f3795777f-1-1920w.webp';
+export {default as workImage2} from './785ae9cd-54b3-46ce-b7f9-182bac8dd2a7-1920w.webp';
+export {default as workImage3} from './ALPS+CONTRACTORS+Waterproofing+1-1920w.webp';
+export {default as workImage4} from './ALPS-Pharmaceutical-floor-scaled-2-1920w.webp';
+export {default as workImage5} from './ALPS-food-beverage-floor-1920w.webp';
+export {default as workImage6} from './ChatGPT+Image+Oct+10-+2025-+01_47_01+PM-1920w.webp';
+export {default as workImage7} from './IMG_4077-1920w.webp';
+export {default as workImage8} from './IMG_4274-1920w.webp';
+export {default as workImage9} from './IMG_4630-1920w.webp';
+export {default as workImage10} from './PHOTO-2025-01-22-14-47-38+2-1920w.webp';
+export {default as workImage11} from './Parnel-floor-resize-2048x1536-6-e1732840182206-1920w.webp';
+export {default as workImage12} from './Venerdi-ALPS-FLOORING--1024x576-1920w.webp';
+export {default as workImage13} from './coatings-6-768x887-1920w.webp';
+export {default as workImage14} from './showers-ALPS-2-1920w.webp';
