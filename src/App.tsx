@@ -17,6 +17,9 @@ import Blog from "@/pages/Blog";
 import NotFound from "@/pages/NotFound";
 
 import "leaflet/dist/leaflet.css";
+import ScrollToTopProgress from "./components/scrolltoTop";
+import SlipResistanceTesting from "./pages/SlipResistanceTesting";
+import HealthAndSupport from "./pages/HealthAndSupport";
 
 function Router() {
   return (
@@ -32,6 +35,8 @@ function Router() {
       <Route path="/our-work" component={OurWork} />
       <Route path="/contact" component={Contact} />
       <Route path="/blog" component={Blog} />
+      <Route path="/health-and-safety" component={HealthAndSupport} />
+      <Route path="/slip-resistance-testing" component={SlipResistanceTesting} />
       <Route path="/*" component={NotFound} />
     </Switch>
   );
@@ -43,6 +48,7 @@ function App() {
       <TooltipProvider>
         <Toaster />
         <Router />
+        <ScrollToTopProgress/>
       </TooltipProvider>
     </QueryClientProvider>
   );
