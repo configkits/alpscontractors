@@ -9,10 +9,10 @@ import { Link } from "wouter";
 
 const Banner = () => {
   return (
-    <div className="hidden sm:block bg-white text-muted-foreground py-2 px-6 border-b border-border">
+    <div className="hidden sm:block sticky bg-white text-muted-foreground py-2 px-6 border-b border-border">
       <div className="container mx-auto flex justify-between items-center text-[11px] font-medium">
         <div className="flex gap-6 items-center">
-          <a href="tel:${DATA.tel1.withCode}">
+          <a href={`tel:${DATA.tel1.withCode}`}>
             <span className="flex items-center gap-1.5">
               <Phone size={14} className="text-accent" />
               {DATA.tel1.number}
