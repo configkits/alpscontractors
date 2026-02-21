@@ -4,7 +4,7 @@ export default function LiquidWaterproofing() {
   return (
     <ServiceTemplate 
       title="Liquid Waterproofing Solutions"
-      subtitle="Seamless, cold-applied membranes for ultimate structural protection."
+      subtitle="PROTECT YOUR PROPERTY WITH EXPERT WATERPROOFING SERVICES IN AUCKLAND & SURROUNDS"
       description="Our liquid-applied waterproofing membranes provide a continuous, seamless barrier against moisture. Ideal for complex roof structures, balconies, and wet areas where traditional sheet systems fail to provide adequate coverage."
       features={[
         "Seamless cold-applied membranes",
