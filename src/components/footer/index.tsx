@@ -3,7 +3,7 @@ import {
   Phone, 
   Mail,  
 } from "lucide-react";
-import logo from "../../assets/alpslogo.jpg";
+import logo from "../../assets/alpslogo-white.png";
 import { DATA } from "@/data";
 import Facebook from "@/assets/logo/facebook";
 import Linkedin from "@/assets/logo/linkedin";
