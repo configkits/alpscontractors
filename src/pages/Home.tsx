@@ -24,6 +24,8 @@ import Navbar from "@/components/navbar";
 import Banner from "@/components/banner";
 import Footer from "@/components/footer";
 import { DATA } from "@/data";
+import CountUp from "@/components/countup";
+import FloatingPromo from "@/components/floatingpromo";
 
 export default function Home() {
   return (
@@ -79,6 +81,8 @@ export default function Home() {
                 </span>
               </a>
             </div>
+
+            <FloatingPromo />
           </div>
         </div>
       </section>
@@ -87,15 +91,22 @@ export default function Home() {
       <section className="bg-primary py-12 md:py-16 border-y border-white/5">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {[
-              { label: "SQUARE METERS COATED", value: "28,840" },
-              { label: "LINE METERS MARKING", value: "850" },
-              { label: "SQUARE METERS ANTISIPLED", value: "9,975" },
-              { label: "PROJECTS COMPLETED", value: "550+" },
-            ].map((stat, i) => (
+            {DATA.countup.map((stat, i) => (
               <div key={i} className="group">
-                <div className="text-3xl sm:text-4xl md:text-5xl font-serif text-accent mb-2 group-hover:scale-110 transition-transform duration-300">
-                  {stat.value}
+                <div className="flex items-center justify-center gap-2 mb-2">
+                <CountUp
+                  from={stat.value * 0.8} // Start from 80% of the value for a more dynamic effect
+                  to={stat.value}
+                  separator=","
+                  direction="up"
+                  duration={1}
+                  className="count-up-text text-3xl sm:text-4xl md:text-5xl font-serif text-accent mb-2 group-hover:scale-110 transition-transform duration-300"
+                />
+                {stat.label === "PROJECTS COMPLETED" && (
+                  <div className="text-3xl sm:text-4xl md:text-5xl font-serif text-accent mb-2 group-hover:scale-110 transition-transform duration-300">
+                    +
+                  </div>
+                )}
                 </div>
                 <div className="text-[9px] md:text-xs font-bold tracking-widest text-white/60 uppercase">
                   {stat.label}
@@ -169,7 +180,7 @@ export default function Home() {
                 maximum safety.
               </p>
               <h2 className="text-2xl md:text-3xl font-serif text-primary mb-6">
-                Industrial Floor Excellence
+                Industrial Flooring Excellence
               </h2>
               <ul className="space-y-4">
                 {[
@@ -202,15 +213,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            {/* <div className="absolute inset-0 pointer-events-none  ">
-              <svg 
-                viewBox="0 0 1000 1000" 
-                className="absolute -right-[50%] top-[138%] w-[140%] h-[140%] opacity-50 text-accent"
-                fill="currentColor"
-              >
-                <path d="M100 850 L350 850 L600 150 L850 850 L950 850 L650 50 L550 50 Z" />
-              </svg>
-            </div> */}
           </div>
         </div>
       </section>
@@ -426,9 +428,6 @@ export default function Home() {
       {/* Clients Section */}
       <section className="py-16 md:py-24 bg-muted/20 border-y overflow-hidden">
         <div className="container mx-auto px-6 mb-12 text-center">
-          <h2 className="text-[10px] font-bold text-accent uppercase tracking-[0.3em] mb-4">
-            Proven Results
-          </h2>
           <h3 className="text-3xl md:text-4xl font-serif text-primary">
             Some of Our Clients
           </h3>
@@ -436,27 +435,57 @@ export default function Home() {
 
         <div className="relative overflow-hidden">
           <div className="flex whitespace-nowrap animate-marquee hover:[animation-play-state:paused]">
-            {[...Array(2)].map((_, i) => (
+            {DATA.client.map((client, i) => (
               <div key={i} className="flex gap-4 md:gap-8 px-2 md:px-4">
-                {[client1, client2, client1, client2, client1, client2].map(
-                  (img, idx) => (
-                    <div
-                      key={idx}
-                      className="w-32 md:w-48 h-20 md:h-28 bg-white rounded-xl shadow-sm flex items-center justify-center p-4 md:p-6 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100 border border-transparent hover:border-accent/20 flex-shrink-0"
-                    >
+                {client.images && (
+                  <div
+                    key={i}
+                    className="w-32 md:w-48 h-20 md:h-28 bg-white rounded-xl shadow-sm flex items-center justify-center p-4 md:p-4 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100 border border-transparent hover:border-accent/20 flex-shrink-0"
+                  >
                       <img
-                        src={img}
-                        alt={`Partner ${idx}`}
+                        src={client.images}
+                        alt={`Client ${client.name}`}
                         className="max-h-full max-w-full object-contain"
                       />
                     </div>
-                  ),
                 )}
               </div>
             ))}
           </div>
         </div>
       </section>
+
+      {/* Certifications  Section */}
+      <section className="py-16 md:py-24 bg-muted/20 border-y overflow-hidden">
+        <div className="container mx-auto px-6 mb-12 text-center">
+          <h3 className="text-3xl md:text-4xl font-serif text-primary">
+            Certifications
+          </h3>
+        </div>
+
+        <div className="relative overflow-hidden">
+          <div className="flex whitespace-nowrap justify-center ">
+            {DATA.certification.map((cert, i) => (
+              <div key={i} className="flex gap-4 md:gap-8 px-2 md:px-4">
+                {cert.images && (
+                  <div
+                    key={i}
+                    className="w-32 md:w-48 h-20 md:h-28 bg-white rounded-xl shadow-sm flex items-center justify-center p-2 md:p-2 transition-all  border border-transparent hover:border-accent/20 flex-shrink-0"
+                  >
+                      <img
+                        src={cert.images}
+                        alt={cert.name}
+                        className="max-h-full max-w-full object-contain"
+                      />
+
+                    </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      
 
       {/* Latest News Section */}
       <section className="py-24 bg-muted/20">

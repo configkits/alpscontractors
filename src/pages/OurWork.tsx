@@ -9,9 +9,10 @@ export default function OurWork() {
       <Navbar />
     <div className="py-24 bg-white">
       <div className="container mx-auto px-6">
+        <h1 className="text-xl md:text-xl font-sans text-accent mb-3">SHOWCASING OUR EXPERT WORK – ALPS CONTRACTORS PROJECTS IN AUCKLAND & SURROUNDS</h1>
         <h1 className="text-4xl md:text-6xl font-serif text-primary mb-8">Our Work</h1>
         <p className="text-xl text-muted-foreground mb-12 max-w-3xl leading-relaxed">
-          Showcasing our precision and quality across New Zealand's most demanding industrial environments.
+          Choosing Alps Contractors, Auckland, means choosing a team that takes pride in delivering flooring solutions built for performance and longevity. We only use trusted brands such as Sika, Mapei, Flowcrete, Allnex, and Equus, ensuring every floor we install is backed by proven quality. Our experienced applicators combine technical knowledge with practical problem-solving, so you’ll always receive advice that suits your project. From the first consultation through to installation and ongoing maintenance, our focus is on creating safe, reliable, and durable resin flooring that meets your exact needs. With epoxy resin flooring from Alps Contractors, you can be confident your floor will stand up to whatever demands are placed on it.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {[1, 2, 3, 4, 5, 6].map((i) => (
