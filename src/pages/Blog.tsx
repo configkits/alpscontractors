@@ -1,4 +1,3 @@
-import Banner from "@/components/banner";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import blog1 from "../assets/blog-1.png";
@@ -9,7 +8,6 @@ import { ChevronRight } from "lucide-react";
 export default function Blog() {
   return (
     <div className="min-h-screen bg-[#fcfdfc] font-['Lexend_Deca']">
-      <Banner />
       <Navbar />
       <div className="py-24 bg-white">
         <div className="container mx-auto px-6">

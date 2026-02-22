@@ -1,4 +1,3 @@
-import Banner from "@/components/banner";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import { DATA } from "@/data";
@@ -6,13 +5,12 @@ import { DATA } from "@/data";
 export default function OurWork() {
   return (
     <div className="min-h-screen bg-[#fcfdfc] font-['Lexend_Deca']">
-      <Banner />
       <Navbar />
       <div className="py-24 bg-white">
         <div className="container mx-auto px-6">
-          <h1 className="text-xl md:text-xl font-sans text-accent mb-3">
-            SHOWCASING OUR EXPERT WORK – ALPS CONTRACTORS PROJECTS IN AUCKLAND &
-            SURROUNDS
+          <h1 className="text-lg md:text-xl text-accent  mx-auto italic">
+            Showcasing Our Expert Work – ALPS Contractors Projects in Auckland &
+            Surrounds
           </h1>
           <h1 className="text-4xl md:text-6xl font-serif text-primary mb-8">
             Our Work

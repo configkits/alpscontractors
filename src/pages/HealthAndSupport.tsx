@@ -1,31 +1,31 @@
-import Banner from "@/components/banner";
+
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import { DATA } from "@/data";
 
 import healthandsafety from "@/assets/5-1920w.jpg";
+import { Plus } from "lucide-react";
 
 const HealthandSupport = () => {
   return (
     <div className="min-h-screen bg-white text-[#222222] font-['Lexend_Deca']">
-      <Banner />
       <Navbar />
 
-      {/* ================= HERO ================= */}
-      <section className="relative h-[80vh] flex items-center justify-center text-center text-white overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center rounded-b-4xl"
-          style={{
-            backgroundImage: `url(${healthandsafety})`,
-          }}
+      <section className="relative h-[500px] flex items-center overflow-hidden rounded-b-4xl">
+        <img
+          src={healthandsafety}
+          alt="Slip Resistance Testing"
+          className="absolute inset-0 w-full h-full object-cover rounded-b-4xl"
         />
-        <div className="absolute inset-0 bg-black/60 rounded-b-4xl" />
-
-        <div className="relative z-10 max-w-4xl px-6">
-          <h1 className="font-bold uppercase tracking-wide leading-tight text-4xl md:text-6xl font-serif text-accent-foreground mb-8">
-            Committed to a Safe and Responsible Workplace
+        <div className="absolute inset-0 bg-primary/80" />
+        <div className="container mx-auto px-6 relative z-10 text-center text-white">
+          <h2 className="text-xs font-bold text-accent uppercase tracking-[0.4em] mb-4">
+            Health & Safety
+          </h2>
+          <h1 className="text-4xl md:text-6xl font-serif mb-8 max-w-4xl mx-auto leading-tight">
+            Our Commitment to a Safe and Healthy Workplace
           </h1>
-          <p className="mt-4 text-lg text-accent font-medium">
+          <p className="mt-8 text-white/60 font-serif italic text-lg">
             Delivering Excellence in All We Do
           </p>
         </div>
@@ -83,7 +83,7 @@ const HealthandSupport = () => {
         </div>
       </section>
 
-      {/* ================= CERTIFICATIONS ================= */}
+
       <section className="py-20 bg-white border-t border-gray-200">
         <div className="container mx-auto px-6 text-center mb-12">
 
@@ -108,19 +108,25 @@ const HealthandSupport = () => {
         </div>
       </section>
 
-      {/* ================= CTA ================= */}
-      <section className="py-20 bg-[#2F4A3F] text-white text-center rounded-t-4xl">
-        <div className="max-w-3xl mx-auto px-6">
-          <p className="text-lg mb-4 font-medium">
+      <section className="py-12 bg-primary border-t border-white/5 text-white text-center">
+        <div className="container mx-auto px-6">
+          <div className="flex justify-center mb-4">
+            <Plus className="text-accent" size={24} />
+          </div>
+          <p className="text-white/60 text-sm uppercase tracking-widest mb-4 font-bold">
             At Alps Contractors, safety is built into everything we do.
           </p>
-
-          <h3 className="text-xl md:text-2xl font-semibold uppercase leading-relaxed">
+          <p className="text-xl md:text-2xl font-serif">
             Call{" "}
-            <span className="text-accent">0210 828 2760</span> or{" "}
-            <span className="text-accent">021 276 2761</span> to discuss your
-            next project with a team you can trust.
-          </h3>
+            <a href={`tel:${DATA.tel1.href}`} className="hover:underline hover:text-accent transition-colors">
+              <span className="text-accent">{DATA.tel1.number}</span>
+            </a>{" "}
+            OR {" "}
+            <a href={`tel:${DATA.tel2.href}`} className="hover:underline hover:text-accent transition-colors">
+              <span className="text-accent">{DATA.tel2.number}</span>
+            </a>{" "}
+            to discuss your next project with a team you can trust.
+          </p>
         </div>
       </section>
 

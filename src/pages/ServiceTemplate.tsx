@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, Phone } from "lucide-react";
-import Banner from "@/components/banner";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import waterproofingHero from "@/assets/waterproofing.png";
@@ -22,7 +21,6 @@ type Props = {
   heroImage?: string;
   contentImage?: string;
   descriptionTitle?: string;
-  phone?: string;
   faqs?: FAQ[];
 };
 
@@ -40,13 +38,11 @@ export default function ServiceTemplate({
   heroImage = waterproofingHero,
   contentImage,
   descriptionTitle,
-  phone = "0800 754 773",
   faqs = []
 }: Props){
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation Header */}
-      <Banner />
       <Navbar />
 
        {/* HERO */}

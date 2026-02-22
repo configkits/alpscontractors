@@ -1,4 +1,3 @@
-import Banner from "@/components/banner";
 import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
@@ -6,7 +5,6 @@ import { Link } from "wouter";
 export default function NotFound() {
   return (
     <div className=" font-['Lexend_Deca']">
-      <Banner />
       <Navbar />
       <div className="min-h-screen flex items-center justify-center bg-muted/30">
         <div className="text-center px-6">
