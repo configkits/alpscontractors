@@ -1,25 +1,42 @@
 import ServiceTemplate from "./ServiceTemplate";
+import blog1 from "../assets/blog-1.png";
 
 export default function IndustrialResin() {
   return (
-    <ServiceTemplate 
-      title="Industrial Resin Flooring Solutions"
-      subtitle="Heavy-duty flooring engineered for New Zealand's toughest environments."
-      description="Our industrial resin systems provide a seamless, high-performance surface that withstands heavy traffic, chemical exposure, and mechanical impact. We specialize in epoxy and polyurethane solutions tailored for manufacturing, food processing, and warehousing."
-      features={[
-        "High-performance epoxy and polyurethane systems",
-        "Chemical and thermal shock resistance",
-        "Hygienic, seamless finishes for food safety",
-        "Fast-curing options for minimal downtime"
-      ]}
-      benefits={[
-        "Extreme Durability",
-        "Easy Maintenance",
-        "NZ Standards Compliant",
-        "Hygienic Surface",
-        "Chemical Resistant",
-        "Impact Resistant"
-      ]}
-    />
+    <ServiceTemplate
+  title="Anti-Slip Solutions"
+  subtitle="Maximise safety with expert anti-slip services"
+  descriptionTitle="WDWDWD"
+  description="Professional anti-slip treatments..."
+  heroImage={blog1}
+  contentImage={blog1}
+  features={[
+    "Slip resistance testing",
+    "Concrete treatment",
+    "Indoor & outdoor coverage",
+  ]}
+  benefits={[
+    "Improved traction",
+    "Durable coating",
+    "Safer workplaces",
+  ]}
+  faqs={[
+    {
+      question: "How long does treatment last?",
+      answer:
+        "Most anti-slip treatments last several years depending on usage and environment.",
+    },
+    {
+      question: "Will it change floor appearance?",
+      answer:
+        "No — treatments are designed to maintain the original floor look.",
+    },
+    {
+      question: "Is it suitable outdoors?",
+      answer:
+        "Yes, our systems work for both indoor and outdoor surfaces.",
+    },
+  ]}
+/>
   );
 }

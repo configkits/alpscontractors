@@ -20,11 +20,13 @@ import "leaflet/dist/leaflet.css";
 import ScrollToTopProgress from "./components/scrolltoTop";
 import SlipResistanceTesting from "./pages/SlipResistanceTesting";
 import HealthAndSupport from "./pages/HealthAndSupport";
+import AboutUs from "./pages/AboutUs";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/about-us" component={AboutUs} />
       <Route path="/services/industrial-resin" component={IndustrialResin} />
       <Route path="/services/liquid-waterproofing" component={LiquidWaterproofing} />
       <Route path="/services/anti-slip" component={AntiSlip} />

@@ -21,7 +21,6 @@ import prodSlip from "../assets/product-slip.png";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/navbar";
-import Banner from "@/components/banner";
 import Footer from "@/components/footer";
 import { DATA } from "@/data";
 import CountUp from "@/components/countup";
@@ -30,9 +29,6 @@ import FloatingPromo from "@/components/floatingpromo";
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#fcfdfc] font-['Lexend_Deca']">
-      {/* Top Bar - Hidden on mobile */}
-      <Banner />
-
       {/* Main Navigation */}
       <Navbar />
 
