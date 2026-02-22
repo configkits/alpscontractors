@@ -9,7 +9,6 @@ import heroBg from "../assets/hero-bg.png";
 import serviceOffice from "../assets/service-office.png";
 import blog1 from "../assets/blog-1.png";
 import blog2 from "../assets/blog-2.png";
-import blog3 from "../assets/blog-3.png";
 import vector from "../assets/vector/Vector.svg";
 import waterproofing from "../assets/waterproofing.png";
 import client1 from "../assets/client-1.png";
@@ -506,26 +505,18 @@ export default function Home() {
             {[
               {
                 title:
-                  "The Future of Industrial Resin: Sustainability & Durability",
+                  "Industrial Epoxy Floors in Auckland, NZ: What to Expect",
                 date: "October 12, 2025",
                 img: blog1,
                 excerpt:
                   "Exploring new eco-friendly resin compositions that don't compromise on heavy-duty performance.",
               },
               {
-                title: "Safety First: New NZ Slip Standards for 2026",
+                title: "How Floor Inspection Services Help Maintain Property Value",
                 date: "September 28, 2025",
                 img: blog2,
                 excerpt:
                   "What commercial property managers need to know about the upcoming safety regulation updates.",
-              },
-              {
-                title:
-                  "Transforming Commercial Spaces with High-Gloss Finishes",
-                date: "September 15, 2025",
-                img: blog3,
-                excerpt:
-                  "How architectural resin flooring is becoming the top choice for modern retail and office environments.",
               },
             ].map((post, i) => (
               <div key={i} className="group cursor-pointer">

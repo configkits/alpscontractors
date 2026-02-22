@@ -137,7 +137,7 @@ const Footer = () => {
         </div>
         <div className="pt-8 border-t border-white/5 text-center">
           <p className="text-[10px] text-white/20 tracking-[0.3em] uppercase">
-            © 2026 ALPS Industrial Resin Systems. Engineered for Performance in
+            © 2026 ALPS Industrial Resin Solutions. Engineered for Performance in
             NZ.
           </p>
         </div>
