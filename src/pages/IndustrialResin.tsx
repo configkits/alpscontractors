@@ -1,6 +1,5 @@
 import ServiceTemplate from "./ServiceTemplate";
 import blog1 from "../assets/blog-1.png";
-import { DATA } from "@/data";
 
 export default function IndustrialResin() {
   return (

@@ -9,7 +9,6 @@ import heroBg from "../assets/hero-bg.png";
 import serviceOffice from "../assets/service-office.png";
 import blog1 from "../assets/blog-1.png";
 import blog2 from "../assets/blog-2.png";
-import blog3 from "../assets/blog-3.png";
 import vector from "../assets/vector/Vector.svg";
 import waterproofing from "../assets/waterproofing.png";
 import client1 from "../assets/client-1.png";

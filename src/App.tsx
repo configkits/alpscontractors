@@ -10,7 +10,6 @@ import AntiSlip from "@/pages/AntiSlip";
 import PoolCoating from "@/pages/PoolCoating";
 import ConcreteRepairs from "@/pages/ConcreteRepairs";
 import InteriorEpoxy from "@/pages/InteriorEpoxy";
-import WhyEpoxy from "@/pages/WhyEpoxy";
 import OurWork from "@/pages/OurWork";
 import Contact from "@/pages/Contact";
 import Blog from "@/pages/Blog";
@@ -33,7 +32,7 @@ function Router() {
       <Route path="/services/pool-coating" component={PoolCoating} />
       <Route path="/services/concrete-repairs" component={ConcreteRepairs} />
       <Route path="/services/interior-epoxy" component={InteriorEpoxy} />
-      <Route path="/services/why-epoxy" component={WhyEpoxy} />
+      {/* <Route path="/services/why-epoxy" component={WhyEpoxy} /> */}
       <Route path="/our-work" component={OurWork} />
       <Route path="/contact" component={Contact} />
       <Route path="/blog" component={Blog} />

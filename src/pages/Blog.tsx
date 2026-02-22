@@ -2,7 +2,6 @@ import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import blog1 from "../assets/blog-1.png";
 import blog2 from "../assets/blog-2.png";
-import blog3 from "../assets/blog-3.png";
 import { ChevronRight } from "lucide-react";
 
 export default function Blog() {
