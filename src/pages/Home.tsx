@@ -2,32 +2,27 @@ import {
   Check, 
   ChevronRight, 
   Mail, 
-  PhoneCall, 
-  Star,  
+  PhoneCall,  
 } from "lucide-react";
 import heroBg from "../assets/hero-bg.png";
 import serviceOffice from "../assets/service-office.png";
-import blog1 from "../assets/blog-1.png";
-import blog2 from "../assets/blog-2.png";
 import vector from "../assets/vector/Vector.svg";
 import waterproofing from "../assets/waterproofing.png";
-import client1 from "../assets/client-1.png";
-import client2 from "../assets/client-2.png";
 import prodEpoxy from "../assets/product-epoxy.png";
 import prodPU from "../assets/product-pu.png";
 import prodRapid from "../assets/product-rapid.png";
 import prodSlip from "../assets/product-slip.png";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { DATA } from "@/data";
 import CountUp from "@/components/countup";
 import FloatingPromo from "@/components/floatingpromo";
+import { Link } from "wouter";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#fcfdfc] font-['Lexend_Deca']">
+    <div className="min-h-screen bg-[#fcfdfc] font-['Lexend_Deca'] ">
       {/* Main Navigation */}
       <Navbar />
 
@@ -42,9 +37,9 @@ export default function Home() {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-3xl text-white">
             <h1 className="text-4xl sm:text-4xl md:text-6xl font-serif mb-5 leading-tight">
-              Auckland region's <br />
+              Auckland’s Leading<br />
               <span className="text-accent">Industrial Resin Flooring</span>
-              <br />& Floor Coating Specialists.
+              <br />& Coating Experts
             </h1>
             <p className="text-xl md:text-3xl text-accent max-w-xl leading-relaxed">
               Delivering Excellence in All We Do
@@ -143,11 +138,12 @@ export default function Home() {
 
               <div className="grid sm:grid-cols-2 gap-4 mt-12 max-w-xl mx-auto lg:mx-0">
                 {[
-                  "Epoxy, Polyurethane & MMA",
-                  "Liquid Applied Membranes",
-                  "Anti slip testing & Slip Resistance solutions",
-                  "Heat & Chemical resistance Coatings",
-                  "UV protective applications",
+                  "EPOXY, POLYURETHANE & MMA flooring systems",
+                  "Liquid applied membranes for roofs, decks, and wet areas",
+                  "Slip Resistance Solutions for kitchens, bathrooms, ramps, and high risk environments",
+                  "Fast curing resin systems for time sensitive projects",
+                  "Heat, Chemical resistant, Waterproofing & UV protective Solutions",
+                  "Slip Resistance Testing"
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <div className="w-5 h-5 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
@@ -241,26 +237,24 @@ export default function Home() {
                   Our Specializations
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3">
-                  {[
-                    "INDUSTRIAL RESIN FLOORING SOLUTIONS",
-                    "LIQUID WATERPROOFING SOLUTIONS",
-                    "ANTI - SLIP SOLUTIONS",
-                    "POOL COATING SOLUTIONS",
-                    "CONCRETE REPAIRS",
-                    "SILICONE & SEALANT SOLUTIONS",
-                  ].map((item, i) => (
+                  {DATA.specialization.map((item, i) => (
+                    <Link
+                      href={item.url ? item.url : ""}
+                      className="hover:text-white transition-colors"
+                    >
                     <div
                       key={i}
                       className="p-4 bg-white rounded-xl border border-border shadow-sm hover:border-accent/50 hover:shadow-md transition-all cursor-pointer group flex items-center justify-between"
                     >
                       <span className="text-[14px] font-bold text-primary group-hover:text-accent transition-colors leading-tight">
-                        {item}
+                        {item.title}
                       </span>
                       <ChevronRight
                         size={14}
                         className="text-muted-foreground group-hover:text-accent group-hover:translate-x-1 transition-all"
                       />
                     </div>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -312,9 +306,9 @@ export default function Home() {
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                       />
                       <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-500" />
-                      <div className="absolute bottom-4 right-4 bg-accent w-12 h-12 flex items-center justify-center rounded-xl opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 shadow-lg">
+                      {/* <div className="absolute bottom-4 right-4 bg-accent w-12 h-12 flex items-center justify-center rounded-xl opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 shadow-lg">
                         <ChevronRight className="text-white" size={24} />
-                      </div>
+                      </div> */}
                     </div>
                     <CardContent className="p-6 md:p-8">
                       <h3 className="text-xl md:text-2xl font-serif text-primary mb-3">
@@ -323,7 +317,7 @@ export default function Home() {
                       <p className="text-sm md:text-base text-muted-foreground mb-6 leading-relaxed line-clamp-2">
                         {product.desc}
                       </p>
-                      <Button
+                      {/* <Button
                         variant="link"
                         className="text-accent p-0 font-bold hover:no-underline text-xs tracking-[0.2em] uppercase"
                       >
@@ -332,7 +326,7 @@ export default function Home() {
                           size={14}
                           className="ml-2 group-hover:translate-x-1 transition-transform"
                         />
-                      </Button>
+                      </Button> */}
                     </CardContent>
                   </Card>
                 ))}
@@ -383,42 +377,7 @@ export default function Home() {
       </section>
 
       {/* Reviews */}
-      <section className="py-24 bg-white border-y">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row gap-12 items-center justify-between">
-            <div className="max-w-md">
-              <h2 className="text-4xl font-serif text-primary mb-6">
-                Client Feedback
-              </h2>
-              <div className="flex gap-1 mb-4">
-                {[1, 2, 3, 4, 5].map((s) => (
-                  <Star key={s} size={20} fill="#F26522" color="#F26522" />
-                ))}
-              </div>
-              <p className="text-xl font-serif italic text-muted-foreground leading-relaxed">
-                "The resin floor ALPS installed has transformed our facility.
-                Their attention to detail and safety compliance is unmatched in
-                New Zealand."
-              </p>
-              <p className="mt-4 font-bold text-primary">— NZ Logistics Hub</p>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              {[client1, client2, client1, client2].map((img, i) => (
-                <div
-                  key={i}
-                  className="w-32 h-32 bg-muted rounded-xl flex items-center justify-center p-6 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all border border-border"
-                >
-                  <img
-                    src={img}
-                    alt={`Client feedback ${i}`}
-                    className="max-h-full max-w-full object-contain"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Clients Section */}
       <section className="py-16 md:py-24 bg-muted/20 border-y overflow-hidden">
@@ -481,78 +440,6 @@ export default function Home() {
         </div>
       </section>
       
-
-      {/* Latest News Section */}
-      <section className="py-24 bg-muted/20">
-        <div className="container mx-auto px-6">
-          <div className="flex justify-between items-end mb-12">
-            <div>
-              <h2 className="text-4xl font-serif text-primary mb-4">
-                Latest News
-              </h2>
-              <p className="text-muted-foreground italic">
-                Insights and updates from the world of industrial flooring
-              </p>
-            </div>
-            <Button
-              variant="outline"
-              className="border-accent text-accent hover:bg-accent hover:text-white font-bold hidden md:flex"
-            >
-              VIEW ALL POSTS
-            </Button>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title:
-                  "Industrial Epoxy Floors in Auckland, NZ: What to Expect",
-                date: "October 12, 2025",
-                img: blog1,
-                excerpt:
-                  "Exploring new eco-friendly resin compositions that don't compromise on heavy-duty performance.",
-              },
-              {
-                title: "How Floor Inspection Services Help Maintain Property Value",
-                date: "September 28, 2025",
-                img: blog2,
-                excerpt:
-                  "What commercial property managers need to know about the upcoming safety regulation updates.",
-              },
-            ].map((post, i) => (
-              <div key={i} className="group cursor-pointer">
-                <div className="aspect-video overflow-hidden rounded-xl mb-6 bg-muted">
-                  <img
-                    src={post.img}
-                    alt={post.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <span className="text-xs font-bold text-accent uppercase tracking-widest">
-                  {post.date}
-                </span>
-                <h3 className="text-xl font-serif text-primary mt-2 mb-4 group-hover:text-accent transition-colors leading-tight">
-                  {post.title}
-                </h3>
-                <p className="text-sm text-muted-foreground line-clamp-2 mb-4">
-                  {post.excerpt}
-                </p>
-                <div className="flex items-center text-accent text-sm font-bold">
-                  READ MORE <ChevronRight size={14} className="ml-1" />
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="mt-12 text-center md:hidden">
-            <Button
-              variant="outline"
-              className="border-accent text-accent w-full font-bold"
-            >
-              VIEW ALL POSTS
-            </Button>
-          </div>
-        </div>
-      </section>
-
       {/* Contact Section */}
       <section
         id="contact"
@@ -614,7 +501,7 @@ export default function Home() {
 
       {/* Footer */}
       <Footer />
-      <div className="absolute right-110 top-250 h-full w-[180vh] pointer-events-none opacity-25  translate-x-1/4">
+      <div className="absolute right-110 top-260 h-full w-[180vh] pointer-events-none opacity-25  translate-x-1/4">
         <img
           src={vector}
           alt=""
