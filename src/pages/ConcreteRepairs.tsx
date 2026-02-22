@@ -1,25 +1,58 @@
 import ServiceTemplate from "./ServiceTemplate";
+import blog1 from "../assets/blog-1.png";
 
 export default function ConcreteRepairs() {
   return (
-    <ServiceTemplate 
-      title="Concrete Repairs & Restoration"
-      subtitle="Structural and aesthetic restoration for industrial concrete assets."
-      description="Extend the life of your facility with our comprehensive concrete repair services. From structural crack injection to floor leveling and spall repair, we use high-strength resins to restore the integrity and safety of your concrete surfaces."
+    <ServiceTemplate
+      title="Concrete Repairs"
+      subtitle="Professional concrete repair, levelling, and resurfacing solutions in Auckland & surrounds."
+      descriptionTitle="Professional Concrete Repairs You Can Trust"
+      description="Alps Contractors, Auckland, specialises in professional concrete repair and coating solutions for residential, commercial, and industrial properties. Cracks, surface wear, and delamination can affect both appearance and structural integrity. Our experienced team conducts detailed inspections to identify the root cause of damage and applies proven repair techniques such as crack injection, joint repairs, and resurfacing to restore durability and extend the life of your concrete surfaces."
       features={[
-        "Structural resin crack injection",
-        "Spalling and joint repair",
-        "Concrete leveling and resurfacing",
-        "Protective coatings for rebar"
+        {
+          title: "Concrete Crack Repairs",
+          description:
+            "Injection and sealing methods restore structural integrity and prevent further damage.",
+        },
+        {
+          title: "Levelling & Resurfacing",
+          description:
+            "Repairs uneven or sinking slabs for improved safety and appearance.",
+        },
+        {
+          title: "Protective Concrete Coatings",
+          description:
+            "Durable coatings protect floors, driveways, sidewalks, and industrial surfaces.",
+        },
+        {
+          title: "Swimming Pool & Block Coatings",
+          description:
+            "Specialised coatings enhance durability and protect concrete structures.",
+        },
+        {
+          title: "Detailed Site Inspections",
+          description:
+            "Professional assessment ensures the right repair solution for long-term performance.",
+        },
       ]}
+      benefitTitle={"Industry Applications We Specialise In"}
       benefits={[
-        "Structural Integrity",
-        "Safety Restoration",
-        "Asset Preservation",
-        "Minimal Downtime",
-        "Precise Engineering",
-        "Seamless Integration"
+        "Restores structural integrity and surface appearance",
+        "Prevents further cracking and deterioration",
+        "Improves safety and surface durability",
+        "Reduces long-term maintenance costs",
+        "Protects against weather, chemicals, and wear",
+        "Professional inspections and tailored repair plans",
       ]}
+      cta={{
+        title: "Restore Your Concrete Surfaces Today",
+        description:
+          "Speak with our concrete repair specialists for reliable, long-lasting solutions.",
+      }}
+      contentImage={blog1}
+      contentImage2={blog1}
+      descriptionTitle2="Tailored Solutions for Long-Term Performance"
+      description2="Concrete surfaces face constant stress from heavy traffic, weather exposure, chemicals, and structural movement. Our tailored repair and coating solutions are designed to protect against future deterioration while improving appearance and functionality. By combining technical expertise with modern repair techniques, we ensure durable results that minimise downtime and reduce long-term maintenance costs."
     />
   );
 }
