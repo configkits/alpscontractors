@@ -2,6 +2,12 @@ import Sika from "../assets/parters/g6-640w.png";
 import flowcreate from "../assets/parters/Group-2-1-640w.png";
 import mapei from "../assets/parters/Group-3-1-640w.png";
 import carboline from "../assets/parters/Group-1-1-640w.png";
+import cohe from "../assets/parters/cohe-logo.png.webp";
+import polymer from "../assets/parters/Polymer-web-logo-1030x596-1.png";
+import resene from "../assets/parters/resene-logo.webp";
+import cotec from "../assets/parters/Screenshot_2026-02-22_at_20.32.13-removebg-preview.png";
+
+
 import chhsnz from "../assets/certifications/CHASNZ-640w.jpeg";
 import bcito from "../assets/certifications/1-f91fb712-640w.png";
 import sitesafe from "../assets/certifications/photo+-+2-640w.png";
@@ -98,6 +104,26 @@ export const DATA = {
       name: "Carboline",
       url: "https://www.carboline.com/",
       images: carboline,
+    },
+    {
+      name: "Cohe",
+      url: "https://cohe.co.nz/",
+      images: cohe,
+    },
+    {
+      name: "Polymer",
+      url: "https://polymer.co.nz/",
+      images: polymer,
+    },
+    {
+      name: "Resene",
+      url: "http://www.resene.co.nz",
+      images: resene,
+    },
+    {
+      name: "Cotec",
+      url: "https://cotec.co.nz/",
+      images: cotec,
     },
   ],
   client: [
@@ -206,6 +232,38 @@ export const DATA = {
       title: "Service Foods",
       desc: "Impact-resistant flooring built for demanding environments.",
       img: workImage13,
+    },
+  ],
+  specialization: [
+    {
+      title: "INDUSTRIAL RESIN FLOORING SOLUTIONS",
+      desc: "High-performance resin flooring systems designed for durability, chemical resistance, and heavy industrial use.",
+      url: "/services/industrial-resin",
+    },
+    {
+      title: "LIQUID WATERPROOFING SOLUTIONS",
+      desc: "Seamless waterproof coatings ideal for roofs, basements, wet areas, and external surfaces.",
+      url: "/services/liquid-waterproofing",
+    },
+    {
+      title: "ANTI - SLIP SOLUTIONS",
+      desc: "Certified anti-slip coatings ensuring safety compliance for commercial and industrial environments.",
+      url: "/services/anti-slip",
+    },
+    {
+      title: "SWIMMINGPOOL COATING SOLUTIONS",
+      desc: "Specialized coatings for pools with UV resistance, waterproofing, and decorative finishes.",
+      url: "/services/pool-coating",
+    },
+    {
+      title: "SILICONE & SEALANT SOLUTIONS",
+      desc: "Professional sealing systems for joints, glazing, façades, and waterproofing applications.",
+      url: "/services/interior-epoxy",
+    },
+    {
+      title: "CONCRETE REPAIRS",
+      desc: "Crack repairs, resurfacing, and structural concrete rehabilitation solutions.",
+      url: "/services/concrete-repairs",
     },
   ],
 };

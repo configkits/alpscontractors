@@ -70,7 +70,7 @@ export default function ServiceTemplate({
   cta,
 }: Props) {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white page-transition">
       <Navbar />
 
       {/* HERO */}

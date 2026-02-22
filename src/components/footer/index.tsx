@@ -70,16 +70,22 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3 text-sm text-white/50 font-medium">
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <Link
+                  href="/health-and-safety"
+                  className="hover:text-white transition-colors"
+                >
                   Health & Safety
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Technical Specs
-                </a>
+                <Link
+                  href="/slip-resistance-testing"
+                  className="hover:text-white transition-colors"
+                >
+                  Slip Resistance Testing
+                </Link>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="hover:text-white transition-colors">
                   Maintenance Guide
                 </a>
@@ -88,7 +94,7 @@ const Footer = () => {
                 <a href="#" className="hover:text-white transition-colors">
                   NZ Standards
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="text-center sm:text-left bg-white/10 p-6 rounded-lg">
