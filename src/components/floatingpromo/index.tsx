@@ -50,7 +50,7 @@ const FloatingPromo = () => {
       "
     />
 
-    {/* Logo */}
+    {/* Logo (commented out to disable floating certification image) */}
     <img
       src={bcito}
       alt="bcito Seal"
@@ -67,6 +67,7 @@ const FloatingPromo = () => {
         drop-shadow-md
       "
     />
+   
 
     {/* Texture Overlay */}
     <div
