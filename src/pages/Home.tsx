@@ -17,7 +17,6 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { DATA } from "@/data";
 import CountUp from "@/components/countup";
-import FloatingPromo from "@/components/floatingpromo";
 import { Link } from "wouter";
 
 export default function Home() {
@@ -71,8 +70,6 @@ export default function Home() {
                 </span>
               </a>
             </div>
-
-            <FloatingPromo />
           </div>
         </div>
       </section>
