@@ -4,7 +4,6 @@ import {
   Mail, 
   PhoneCall,  
 } from "lucide-react";
-import heroBg from "../assets/hero-bg.png";
 import serviceOffice from "../assets/service-office.png";
 import vector from "../assets/vector/Vector.svg";
 import waterproofing from "../assets/waterproofing.png";
@@ -18,6 +17,9 @@ import Footer from "@/components/footer";
 import { DATA } from "@/data";
 import CountUp from "@/components/countup";
 import { Link } from "wouter";
+import Hero from "@/components/hero";
+import IndustriesWeServe from "@/components/IndustriesWeServe";
+import WhyChooseUs from "@/components/whyChooseUs";
 
 export default function Home() {
   return (
@@ -26,53 +28,7 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative min-h-[500px] md:h-[650px] flex items-center overflow-hidden">
-        <img
-          src={heroBg}
-          alt="Industrial Resin Flooring"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/40" />
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-3xl text-white">
-            <h1 className="text-4xl sm:text-4xl md:text-6xl font-serif mb-5 leading-tight">
-              Auckland’s Leading<br />
-              <span className="text-accent">Industrial Resin Flooring</span>
-              <br />& Coating Experts
-            </h1>
-            <p className="text-xl md:text-3xl text-accent max-w-xl leading-relaxed">
-              Delivering Excellence in All We Do
-            </p>
-            <p className="text-lg md:text-xl mb-8 text-white/80 max-w-xl leading-relaxed">
-              Professional floor systems and anti-slip solutions for industrial,
-              commercial, and safety-critical environments.
-            </p>
-
-            {/* Floating Promo - Interactive Header Strip */}
-            <div className="flex justify-center pointer-events-none">
-              <a
-                href="#contact"
-                className="pointer-events-auto group inline-flex items-center gap-4 rounded-full bg-black/60 backdrop-blur-md px-8 py-3 border border-white/20 shadow-2xl hover:bg-black/80 hover:border-accent/60 transition-all duration-300"
-              >
-                <span className="text-[10px] font-bold uppercase tracking-[0.35em] text-white/70">
-                  NZ
-                </span>
-                <span className="text-lg md:text-xl font-serif font-bold leading-none">
-                  <span className="text-white">Industrial</span>{" "}
-                  <span className="text-accent">Resin Experts</span>
-                </span>
-                <span className="hidden md:flex items-center gap-1 text-[10px] font-bold uppercase tracking-[0.3em] text-accent">
-                  Talk to a specialist
-                  <ChevronRight
-                    size={16}
-                    className="transition-transform duration-300 group-hover:translate-x-1"
-                  />
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero />
 
       {/* Statistics Section */}
       <section className="bg-primary py-12 md:py-16 border-y border-white/5">
@@ -120,7 +76,7 @@ export default function Home() {
               <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
             </div>
             <div>
-              <h2 className="text-xs font-bold text-accent uppercase tracking-[0.3em] mb-6 block text-center lg:text-left">
+              <h2 className="text-xl font-bold text-accent uppercase tracking-[0.3em] mb-4 block text-center lg:text-left">
                 Expertise
               </h2>
               <h3 className="text-3xl md:text-5xl font-serif text-primary mb-8 leading-tight text-center lg:text-left">
@@ -212,8 +168,7 @@ export default function Home() {
             {["Industrial", "Commercial", "Maintenance"].map((type, i) => (
               <a
                 key={i}
-                href="#"
-                className="hover:text-accent transition-colors flex items-center gap-2 group"
+                className="hover:text-accent transition-colors cursor-default flex items-center gap-2 group"
               >
                 <div className="w-2 h-2 bg-accent rounded-full group-hover:scale-125 transition-transform" />{" "}
                 {type}
@@ -222,6 +177,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Industries Served */}
+      <IndustriesWeServe/>
 
       {/* Product Systems */}
       <section className="py-20 md:py-24 bg-muted/30">
@@ -350,14 +308,14 @@ export default function Home() {
           <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10" />
           <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10" />
 
-          <div className="flex whitespace-nowrap animate-marquee">
+          <div className="flex whitespace-nowrap animate-marquee-right ">
             {[...Array(2)].map((_, i) => (
               <div key={i} className="flex gap-8 px-4">
                 {DATA.partner.map((data, idx) => (
                   <a href={data.url}>
                     <div
                       key={`${data.name}-${idx}`}
-                      className="w-48 h-28 bg-muted/30 rounded-xl flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100 border border-transparent hover:border-accent/20 flex-shrink-0"
+                      className="w-48 h-28 bg-primary/50 rounded-xl flex items-center justify-center p-6 hover:grayscale-0 transition-all  hover:opacity-100 border border-transparent hover:border-accent flex-shrink-0"
                     >
                       <img
                         src={data.images}
@@ -391,7 +349,7 @@ export default function Home() {
                 {client.images && (
                   <div
                     key={i}
-                    className="w-32 md:w-48 h-20 md:h-28 bg-white rounded-xl shadow-sm flex items-center justify-center p-4 md:p-4 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100 border border-transparent hover:border-accent/20 flex-shrink-0"
+                    className="w-32 md:w-48 h-20 md:h-28 bg-white rounded-xl shadow-sm flex items-center justify-center p-4 md:p-4 hover:grayscale-0 transition-all  hover:opacity-100 border border-transparent hover:border-accent/20 flex-shrink-0"
                   >
                       <img
                         src={client.images}
@@ -405,6 +363,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <WhyChooseUs/>
 
       {/* Certifications  Section */}
       <section className="py-16 md:py-24 bg-muted/20 border-y overflow-hidden">

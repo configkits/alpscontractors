@@ -9,37 +9,46 @@ export default function PoolCoating() {
       descriptionTitle="Tailored Pool Coating Solutions"
       description="Alps Contractors, Auckland, provides specialist pool coating solutions designed to restore shine, protect surfaces, and extend the life of concrete and fiberglass pools. Our coatings guard against leaks, discoloration, chemical exposure, and everyday wear caused by sun and water use. Whether resurfacing an aging pool or enhancing durability, our systems deliver long-lasting protection with an attractive finish."
       features={[
-  {
-    title: "Professional Surface Preparation",
-    description: "Diamond grinding ensures proper adhesion and prevents peeling or delamination."
-  },
-  {
-    title: "Crack & Surface Repairs",
-    description: "Structural defects and imperfections are repaired for a smooth, durable finish."
-  },
-  {
-    title: "High-Performance Epoxy Coatings",
-    description: "Primer plus multiple epoxy coats provide strong protection and visual appeal."
-  },
-  {
-    title: "Controlled Curing Process",
-    description: "Proper drying time ensures chemical resistance, UV stability, and longevity."
-  }
-]}
-      
+        {
+          title: "Professional Surface Preparation",
+          description:
+            "Diamond grinding ensures proper adhesion and prevents peeling or delamination.",
+        },
+        {
+          title: "Crack & Surface Repairs",
+          description:
+            "Structural defects and imperfections are repaired for a smooth, durable finish.",
+        },
+        {
+          title: "High-Performance Epoxy Coatings",
+          description:
+            "Primer plus multiple epoxy coats provide strong protection and visual appeal.",
+        },
+        {
+          title: "Controlled Curing Process",
+          description:
+            "Proper drying time ensures chemical resistance, UV stability, and longevity.",
+        },
+      ]}
+      stats={[
+        { value: "25+ Years", label: "Waterproofing Experience" },
+        { value: "Seamless Systems", label: "Advanced Liquid Membranes" },
+        { value: "Fast Curing", label: "Rain-Safe Within Hours" },
+      ]}
       benefitTitle={"Industry Applications We Specialise In"}
       benefits={[
-  "Restores pool appearance and shine",
-  "Protects against leaks and discoloration",
-  "Resistant to UV exposure and chemicals",
-  "Extends lifespan of concrete and fiberglass pools",
-  "Smooth, durable and easy-to-maintain finish",
-  "Professional inspection and repair planning"
-]}
-      cta={ {
-  title: "Restore Your Pool With Confidence",
-  description: "Talk to our pool coating specialists for a durable, professional finish."
-}}
+        "Restores pool appearance and shine",
+        "Protects against leaks and discoloration",
+        "Resistant to UV exposure and chemicals",
+        "Extends lifespan of concrete and fiberglass pools",
+        "Smooth, durable and easy-to-maintain finish",
+        "Professional inspection and repair planning",
+      ]}
+      cta={{
+        title: "Restore Your Pool With Confidence",
+        description:
+          "Talk to our pool coating specialists for a durable, professional finish.",
+      }}
       contentImage={blog1}
       contentImage2={blog1}
       descriptionTitle2="Correct Process, Premium Materials, Lasting Results"

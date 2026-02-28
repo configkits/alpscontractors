@@ -35,6 +35,11 @@ export default function IndustrialResin() {
         "Car park line marking, loading bays, and pedestrian crossings",
         "Pool surrounds, patios, and outdoor resin finishes",
       ]}
+      stats={[
+        { value: "25+ Years", label: "Waterproofing Experience" },
+        { value: "Seamless Systems", label: "Advanced Liquid Membranes" },
+        { value: "Fast Curing", label: "Rain-Safe Within Hours" },
+      ]}
       faqs={[
         {
           question:
