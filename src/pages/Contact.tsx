@@ -14,16 +14,20 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-[#fcfdfc] font-['Lexend_Deca']">
       <Navbar />
-      <div className="py-24 bg-white">
+      <div className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-serif text-primary mb-8 text-center">
+            <h1 className="text-4xl md:text-6xl font-serif text-primary mb-6 text-center">
               Contact Us
             </h1>
+            <p className="text-2xl text-muted-foreground mb-3 text-center max-w-2xl mx-auto">
+              Contact <span className="font-bold text-accent">Alps</span> Contractors for Resin Flooring and Waterproofing Solutions Across Auckland and Surrounding Areas
+            </p>
             <p className="text-xl text-muted-foreground mb-12 text-center max-w-2xl mx-auto">
               Get in touch with our specialists for a consultation on your next
-              industrial or commercial flooring project.
+              flooring project.
             </p>
+            
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 gap-4">

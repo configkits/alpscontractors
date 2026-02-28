@@ -35,6 +35,11 @@ export default function ConcreteRepairs() {
             "Professional assessment ensures the right repair solution for long-term performance.",
         },
       ]}
+      stats={[
+        { value: "25+ Years", label: "Waterproofing Experience" },
+        { value: "Seamless Systems", label: "Advanced Liquid Membranes" },
+        { value: "Fast Curing", label: "Rain-Safe Within Hours" },
+      ]}
       benefitTitle={"Industry Applications We Specialise In"}
       benefits={[
         "Restores structural integrity and surface appearance",
