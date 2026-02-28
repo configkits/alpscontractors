@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import heroBg1 from "../../assets/hero-bg.png";
 import heroBg2 from "../../assets/work/ChatGPT+Image+Oct+10-+2025-+01_47_01+PM-1920w.webp";
 import heroBg3 from "../../assets/work/IMG_4077-1920w.webp";

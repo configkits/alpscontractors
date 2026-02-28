@@ -4,7 +4,6 @@ import {
   Mail, 
   PhoneCall,  
 } from "lucide-react";
-import heroBg from "../assets/hero-bg.png";
 import serviceOffice from "../assets/service-office.png";
 import vector from "../assets/vector/Vector.svg";
 import waterproofing from "../assets/waterproofing.png";
@@ -17,7 +16,6 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { DATA } from "@/data";
 import CountUp from "@/components/countup";
-import FloatingPromo from "@/components/floatingpromo";
 import { Link } from "wouter";
 import Hero from "@/components/hero";
 import IndustriesWeServe from "@/components/IndustriesWeServe";
