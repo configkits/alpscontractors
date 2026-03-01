@@ -1,10 +1,13 @@
 import ServiceTemplate from "./ServiceTemplate";
-import blog1 from "../assets/blog-1.png";
+import image1 from "../assets/services/industrialresin/IMG_4807-scaled-2880w.webp";
+import image2 from "../assets/services/industrialresin/IMG_7725-scaled-2880w.webp";
+import hero from "../assets/services/industrialresin/coatings-6-768x887-2880w.webp";
 
 export default function IndustrialResin() {
   return (
     <ServiceTemplate
-      badge="Industrial Flooring Specialists"
+      //badge="Industrial Flooring Specialists"
+      heroImage={hero}
       title="Industrial Resin Flooring Solutions"
       subtitle="Durable, stylish & practical resin floors in Auckland & surrounds."
       descriptionTitle="Expert Epoxy Resin Flooring Installers"
@@ -79,8 +82,8 @@ export default function IndustrialResin() {
         description:
           "Alps Contractors, Auckland, delivers high-performance resin flooring built for durability and longevity. We use trusted brands like Sika, Mapei, Flowcrete, Allnex, and Equus to ensure proven quality on every project. From consultation to installation and maintenance, our experienced team provides practical solutions tailored to your needs—giving you a safe, reliable floor that stands up to demanding environments.",
       }}
-      contentImage={blog1}
-      contentImage2={blog1}
+      contentImage={image1}
+      contentImage2={image2}
       descriptionTitle2="Customised Solutions for Your Industry"
       description2="Every project we take on is unique, and so are the resin systems we install. For the food and beverage industry, epoxy resin flooring can be tailored with hygienic, food-safe properties to meet strict health standards. Breweries often require specialist solutions such as sloped floors for drainage and additional slip resistance. In industrial settings, demarcation and line-marking systems can be included to separate production areas, loading bays, and pedestrian zones, improving both safety and workflow. Our goal is to understand your requirements and deliver a resin flooring solution that’s designed specifically for your business or property."
     />

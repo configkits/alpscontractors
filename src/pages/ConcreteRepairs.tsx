@@ -1,9 +1,12 @@
 import ServiceTemplate from "./ServiceTemplate";
-import blog1 from "../assets/blog-1.png";
+import image1 from "../assets/services/Concreterepairs/10-62a38a13-2880w.webp";
+import image2 from "../assets/services/Concreterepairs/11-2880w.webp";
+import image3 from "../assets/services/Concreterepairs/19-2880w.webp";
 
 export default function ConcreteRepairs() {
   return (
     <ServiceTemplate
+      heroImage={image1}
       title="Concrete Repairs"
       subtitle="Professional concrete repair, levelling, and resurfacing solutions in Auckland & surrounds."
       descriptionTitle="Professional Concrete Repairs You Can Trust"
@@ -54,8 +57,8 @@ export default function ConcreteRepairs() {
         description:
           "Speak with our concrete repair specialists for reliable, long-lasting solutions.",
       }}
-      contentImage={blog1}
-      contentImage2={blog1}
+      contentImage={image3}
+      contentImage2={image2}
       descriptionTitle2="Tailored Solutions for Long-Term Performance"
       description2="Concrete surfaces face constant stress from heavy traffic, weather exposure, chemicals, and structural movement. Our tailored repair and coating solutions are designed to protect against future deterioration while improving appearance and functionality. By combining technical expertise with modern repair techniques, we ensure durable results that minimise downtime and reduce long-term maintenance costs."
     />

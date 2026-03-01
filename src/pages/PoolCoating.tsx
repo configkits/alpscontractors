@@ -1,9 +1,12 @@
 import ServiceTemplate from "./ServiceTemplate";
-import blog1 from "../assets/blog-1.png";
+import image1 from "../assets/services/Concretepoolcoatingsolutions/22-2880w.webp";
+import image2 from "../assets/services/Concretepoolcoatingsolutions/GettyImages-1327252127-2880w.webp";
+import hero from "../assets/services/Concretepoolcoatingsolutions/GettyImages-1327252127-2880w.webp";
 
 export default function PoolCoating() {
   return (
     <ServiceTemplate
+      heroImage={hero}
       title="Pool Coating Solutions"
       subtitle="Expert concrete pool coatings & repairs built to last in Auckland & surrounds."
       descriptionTitle="Tailored Pool Coating Solutions"
@@ -49,8 +52,8 @@ export default function PoolCoating() {
         description:
           "Talk to our pool coating specialists for a durable, professional finish.",
       }}
-      contentImage={blog1}
-      contentImage2={blog1}
+      contentImage={image1}
+      contentImage2={image2}
       descriptionTitle2="Correct Process, Premium Materials, Lasting Results"
       description2="Achieving a durable pool coating requires the right process, quality materials, and expert application. From thorough surface preparation and defect repairs to multi-layer coating and proper curing, every step is carefully managed to ensure lasting performance. Our detailed inspections help identify hidden issues early, allowing preventive repairs that protect your pool from future damage while delivering a flawless, long-lasting finish."
     />
