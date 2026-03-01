@@ -1,9 +1,12 @@
 import ServiceTemplate from "./ServiceTemplate";
-import blog1 from "../assets/blog-1.png";
+import hero from "../assets/services/Interiorepoxyfloors/AdobeStock_607085035.webp";
+import image2 from "../assets/services/Interiorepoxyfloors/GettyImages-1319836742-2880w.webp";
+import image1 from "../assets/services/AntislipSolutions/208f52d2-770f-40dd-89d0-558f3795777f-1-2880w.webp";
 
 export default function InteriorEpoxy() {
   return (
     <ServiceTemplate
+      heroImage={hero}
       title="Interior Epoxy Floors"
       subtitle="High-performance epoxy flooring solutions for homes, commercial spaces, and industrial interiors across Auckland."
       descriptionTitle="Durable & Modern Interior Epoxy Flooring"
@@ -54,8 +57,8 @@ export default function InteriorEpoxy() {
         description:
           "Call our Auckland epoxy flooring specialists for a durable, seamless solution tailored to your space.",
       }}
-      contentImage={blog1}
-      contentImage2={blog1}
+      contentImage={image1}
+      contentImage2={image2}
       descriptionTitle2="Our Professional Epoxy Flooring Process"
       description2="We follow a proven installation process to ensure long-term performance. This includes detailed surface inspection, concrete grinding, moisture testing, and professional primer application before installing the epoxy coating system. Multiple layers may be applied depending on durability and design requirements. After proper curing and final inspection, the result is a seamless interior epoxy floor built to withstand Auckland’s demanding environments."
     />

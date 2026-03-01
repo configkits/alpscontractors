@@ -1,9 +1,12 @@
 import ServiceTemplate from "./ServiceTemplate";
-import blog1 from "../assets/blog-1.png";
+import image1 from "../assets/services/AntislipSolutions/5-2880w.webp";
+import image2 from "../assets/services/AntislipSolutions/7-2880w.webp";
+import Hero from "../assets/services/AntislipSolutions/208f52d2-770f-40dd-89d0-558f3795777f-1-2880w.webp";
 
 export default function AntiSlip() {
   return (
     <ServiceTemplate
+      heroImage={Hero}
       title="Anti-Slip Solutions"
       subtitle="Maximise safety with expert anti-slip system services in Auckland & surrounds."
       descriptionTitle="Professional Anti-Slip Systems for Every Surface"
@@ -86,8 +89,8 @@ export default function AntiSlip() {
         description:
           "Speak with our anti-slip specialists for expert advice and compliance testing.",
       }}
-      contentImage={blog1}
-      contentImage2={blog1}
+      contentImage={image1}
+      contentImage2={image2}
       descriptionTitle2="Safety & Durability for Commercial and Residential Spaces"
       description2="From workplaces and restaurants to hospitals, warehouses, and outdoor walkways, our anti-slip systems are designed to handle heavy foot traffic, water exposure, grease, and chemicals. Treatments are applied with minimal disruption and allow for immediate usability, ensuring your business or home remains functional while safety is enhanced. We deliver tailored solutions that protect people while preserving the style and durability of your flooring."
     />

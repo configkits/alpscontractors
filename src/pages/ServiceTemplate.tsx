@@ -161,7 +161,7 @@ export default function ServiceTemplate({
                   <img
                     src={contentImage}
                     alt="Service visual"
-                    className="rounded-2xl shadow-2xl w-full h-full object-cover"
+                    className="rounded-2xl shadow-2xl w-full h-full max-h- object-cover"
                   />
                 )}
               </div>

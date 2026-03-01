@@ -1,9 +1,12 @@
 import ServiceTemplate from "./ServiceTemplate";
-import blog1 from "../assets/blog-1.png";
+import image1 from "../assets/services/Liquidwaterproofing/12-2880w.webp";
+import image2 from "../assets/services/Liquidwaterproofing/4a-2880w.webp";
+import hero from "../assets/services/Liquidwaterproofing/GettyImages-1319822681-2880w.webp";
 
 export default function LiquidWaterproofing() {
   return (
     <ServiceTemplate
+      heroImage={hero}
       title="Liquid Waterproofing Solutions"
       subtitle="Protect your property with expert waterproofing services in Auckland & surrounds."
       descriptionTitle="Expert Liquid Waterproofing Systems"
@@ -91,8 +94,8 @@ export default function LiquidWaterproofing() {
         description:
           "Talk to our waterproofing experts for a tailored solution.",
       }}
-      contentImage={blog1}
-      contentImage2={blog1}
+      contentImage={image1}
+      contentImage2={image2}
       descriptionTitle2="Why Choose Alps Contractors"
       description2="With decades of experience, Alps Contractors delivers liquid waterproofing solutions designed for performance, safety, and longevity. We provide expert advice tailored to your project—whether you need UV resistance, elasticity for movement, or chemical durability. From consultation to installation and maintenance, our focus is on reliable protection, environmentally responsible systems, and professional results delivered on time and within budget."
     />
