@@ -43,9 +43,9 @@ export const DATA = {
   googlemap:
     "https://www.google.com/maps/place/Alps+Contractors/@-36.9026258,174.8196943,886m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4aeb10429427fe7:0xa19bcaabbec9c974!8m2!3d-36.9026258!4d174.8196943!16s%2Fg%2F11q8stv_9t!5m1!1e2?entry=ttu&g_ep=EgoyMDI2MDIxMS4wIKXMDSoASAFQAw%3D%3D",
   tel1: {
-    withCode: "+642108282760",
-    number: "0210 828 2760",
-    href: "tel:+642108282760",
+    withCode: "+6492577757",
+    number: "09 257 7757",
+    href: "tel:+6492577757",
   },
   tel2: {
     withCode: "+64212762761",
