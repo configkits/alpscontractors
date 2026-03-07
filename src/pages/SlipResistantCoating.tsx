@@ -1,8 +1,5 @@
-import React from 'react'
 
-type Props = {}
-
-const SlipResistantCoating = (props: Props) => {
+const SlipResistantCoating = () => {
   return (
     <div>SlipResistantCoating</div>
   )

@@ -1,8 +1,7 @@
-import React from 'react'
 
-type Props = {}
 
-const RapidCureCoating = (props: Props) => {
+
+const RapidCureCoating = () => {
   return (
     <div>RapidCureCoating</div>
   )

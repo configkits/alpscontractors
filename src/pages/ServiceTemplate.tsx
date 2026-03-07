@@ -1,6 +1,4 @@
 import { Check, Plus, type LucideIcon } from "lucide-react";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
 import waterproofingHero from "@/assets/waterproofing.png";
 import {
   Accordion,

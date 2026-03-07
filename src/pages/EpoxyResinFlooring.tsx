@@ -1,14 +1,12 @@
 import Navbar from '@/components/navbar'
-import React from 'react'
+
 import ServiceTemplate from './ServiceTemplate'
 import image1 from "../assets/services/industrialresin/IMG_4807-scaled-2880w.webp";
 import image2 from "../assets/services/industrialresin/IMG_7725-scaled-2880w.webp";
 import hero from "../assets/services/industrialresin/coatings-6-768x887-2880w.webp";
 import Footer from '@/components/footer';
 
-type Props = {}
-
-const EpoxyResinFlooring = (props: Props) => {
+const EpoxyResinFlooring = () => {
   return (
      <div className="min-h-screen bg-white page-transition">
               <Navbar />

@@ -1,8 +1,6 @@
-import React from 'react'
 
-type Props = {}
 
-const PolyurethaneScreed = (props: Props) => {
+const PolyurethaneScreed = () => {
   return (
     <div>PolyurethaneScreed</div>
   )
