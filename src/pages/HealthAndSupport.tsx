@@ -1,6 +1,7 @@
 
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import aboutus from "../assets/Picture1.png"
 import { DATA } from "@/data";
 
 import healthandsafety from "@/assets/5-1920w.jpg";
@@ -38,11 +39,11 @@ const HealthandSupport = () => {
 
           {/* Logo */}
           <div className="flex justify-center">
-            <div className="bg-white p-10 rounded-2xl shadow-lg border border-gray-100">
+            <div className="bg-white rounded-2xl shadow-lg h-full w-full">
               <img
-                src={DATA.certification[3].images}
+                src={aboutus}
                 alt="Site Safe Member"
-                className="h-48 mx-auto object-contain"
+                className="h-full w-full object-contain rounded-2xl"
               />
             </div>
           </div>
