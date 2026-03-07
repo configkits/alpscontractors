@@ -18,7 +18,9 @@ const IndustriesWeServe = () => {
               "Warehouses & Logistics",
               "Food & Beverage Processing",
               "Pharmaceutical Environments",
-              "Marine Industries"
+              "Marine Industries",
+              "Pet care & Veterinary",
+              "Residential"
             ].map((industry, i) => (
               <div key={i} className="p-6 bg-muted/30 rounded-2xl border border-transparent hover:border-accent/30 hover:bg-white hover:shadow-xl transition-all group">
                 <p className="text-sm cursor-default font-bold text-primary/70 group-hover:text-primary transition-colors uppercase tracking-wide leading-tight">

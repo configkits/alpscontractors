@@ -19,6 +19,8 @@ import jacklink from "../assets/clients/Z2-1920w.png";
 import serivcfd from "../assets/clients/Z3-1920w.png";
 import nzpm from "../assets/clients/Z4-1920w.png";
 import naylorlove from "../assets/clients/naylorlove.png";
+import strongHold from "../assets/clients/ll.webp";
+
 import {
   workImage1,
   workImage10,
@@ -35,6 +37,7 @@ import {
   workImage8,
   workImage9,
 } from "@/assets/work";
+import { Shield, Star, Zap } from "lucide-react";
 
 export const DATA = {
   location: "Auckland, NZ",
@@ -160,6 +163,7 @@ export const DATA = {
     },
     {
       name: "Stronghold Group",
+      images: strongHold,
     },
   ],
   work: [
@@ -256,7 +260,7 @@ export const DATA = {
       url: "/services/pool-coating",
     },
     {
-      title: "SILICONE & SEALANT SOLUTIONS",
+      title: "SEALANT & SILICONE SOLUTIONS",
       desc: "Professional sealing systems for joints, glazing, façades, and waterproofing applications.",
       url: "/services/interior-epoxy",
     },
@@ -266,4 +270,33 @@ export const DATA = {
       url: "/services/concrete-repairs",
     },
   ],
+  advertisement: [
+     {
+      badge: "Limited Offer",
+      headline: "Free Slip Resistance",
+      highlight: "Assessment",
+      sub: "Book any commercial project this month and receive a complimentary NZ-certified slip resistance audit.",
+      cta: "Claim Offer",
+      ctaSecondary: "Learn More",
+      icon: Shield,
+    },
+    {
+      badge: "New Service",
+      headline: "Rapid Cure Systems —",
+      highlight: "48-Hour Turnaround",
+      sub: "Minimal downtime. Maximum performance. MMA resin systems that cure fast so your business keeps moving.",
+      cta: "Get a Quote",
+      ctaSecondary: "See Systems",
+      icon: Zap,
+    },
+    {
+      badge: "Trusted by Industry",
+      headline: "500+ Projects",
+      highlight: "Across New Zealand",
+      sub: "From food processing plants to commercial kitchens — ALPS delivers flooring systems built to last.",
+      cta: "View Projects",
+      ctaSecondary: "Our Clients",
+      icon: Star,
+    },
+  ]
 };

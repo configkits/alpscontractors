@@ -198,11 +198,8 @@ export default function AboutUs() {
         <div className="container mx-auto px-6">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             <div className="lg:w-1/2">
-              <h2 className="text-xs font-bold text-accent uppercase tracking-[0.4em] mb-6">
-                Certifications
-              </h2>
               <h3 className="text-3xl md:text-4xl font-serif mb-8 leading-tight">
-                Safety & Compliance Standards
+                Safety Compliance Standards & Solid Supplier Network
               </h3>
               <p className="text-white/60 mb-8 leading-relaxed">
                 ALPS Contractors operates under strict Health & Safety systems

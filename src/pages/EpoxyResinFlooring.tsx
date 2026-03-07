@@ -1,31 +1,35 @@
-import ServiceTemplate from "./ServiceTemplate";
+import Navbar from '@/components/navbar'
+import React from 'react'
+import ServiceTemplate from './ServiceTemplate'
 import image1 from "../assets/services/industrialresin/IMG_4807-scaled-2880w.webp";
 import image2 from "../assets/services/industrialresin/IMG_7725-scaled-2880w.webp";
 import hero from "../assets/services/industrialresin/coatings-6-768x887-2880w.webp";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
+import Footer from '@/components/footer';
 
-export default function IndustrialResin() {
+type Props = {}
+
+const EpoxyResinFlooring = (props: Props) => {
   return (
-    <div className="min-h-screen bg-white page-transition">
+     <div className="min-h-screen bg-white page-transition">
               <Navbar />
     <ServiceTemplate
       //badge="Industrial Flooring Specialists"
       heroImage={hero}
-      title="Industrial Resin Flooring Solutions"
-      subtitle="Durable, stylish & practical resin floors in Auckland & surrounds."
-      descriptionTitle="Expert Epoxy Resin Flooring Installers"
-      description="Alps Contractors, Auckland, has over 25 years of experience delivering high-performance epoxy resin flooring systems that are durable, versatile, and cost-effective. Epoxy resin is the most widely used resin flooring solution due to its strength, longevity, and adaptability across industrial, commercial, and residential environments. Whether you require a seamless warehouse floor, a hygienic coating for food facilities, or a heavy-duty solution for workshops and garages, our experienced team ensures each floor is tailored to your specific requirements—providing a surface that performs exceptionally while maintaining an attractive finish."
+      title="Epoxy Resin Flooring Systems"
+      subtitle="High‑performance, chemically resistant coatings for industrial, commercial, and residential floors"
+      descriptionTitle="How Epoxy Resin Systems Work"
+      description="An epoxy floor system blends Part A (epoxy resin) with Part B (hardener). As the components react, they chemically crosslink into a solid, highly adhesive layer with excellent mechanical and protective properties.
+Different resin chemistries allow tailoring for performance needs:"
       features={[
         {
-          title: "Epoxy Resin Flooring",
+          title: "Bisphenol‑A epoxies",
           description:
-            "Versatile, durable, and ideal for industrial, commercial, and residential use",
+            "Widely used, cost‑effective, and suitable for general‑purpose coatings.",
         },
         {
-          title: "Polyurethane Resin Flooring",
+          title: "Novolac epoxies",
           description:
-            "Higher chemical and thermal resistance for demanding environments.",
+            " High‑performance resins that offer superior chemical and heat resistance for aggressive environments, though they tend to be more brittle and costly.",
         },
         {
           title: "MMA Resin Flooring",
@@ -88,10 +92,12 @@ export default function IndustrialResin() {
       }}
       contentImage={image1}
       contentImage2={image2}
-      descriptionTitle2="Customised Solutions for Your Industry"
+      descriptionTitle2="Key Performance Characteristics"
       description2="Every project we take on is unique, and so are the resin systems we install. For the food and beverage industry, epoxy resin flooring can be tailored with hygienic, food-safe properties to meet strict health standards. Breweries often require specialist solutions such as sloped floors for drainage and additional slip resistance. In industrial settings, demarcation and line-marking systems can be included to separate production areas, loading bays, and pedestrian zones, improving both safety and workflow. Our goal is to understand your requirements and deliver a resin flooring solution that’s designed specifically for your business or property."
     />
     <Footer />
     </div>
-  );
+  )
 }
+
+export default EpoxyResinFlooring

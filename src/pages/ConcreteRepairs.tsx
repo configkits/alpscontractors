@@ -2,9 +2,13 @@ import ServiceTemplate from "./ServiceTemplate";
 import image1 from "../assets/services/Concreterepairs/10-62a38a13-2880w.webp";
 import image2 from "../assets/services/Concreterepairs/11-2880w.webp";
 import image3 from "../assets/services/Concreterepairs/19-2880w.webp";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 export default function ConcreteRepairs() {
   return (
+    <div className="min-h-screen bg-white page-transition">
+          <Navbar />
     <ServiceTemplate
       heroImage={image1}
       title="Concrete Repairs"
@@ -62,5 +66,7 @@ export default function ConcreteRepairs() {
       descriptionTitle2="Tailored Solutions for Long-Term Performance"
       description2="Concrete surfaces face constant stress from heavy traffic, weather exposure, chemicals, and structural movement. Our tailored repair and coating solutions are designed to protect against future deterioration while improving appearance and functionality. By combining technical expertise with modern repair techniques, we ensure durable results that minimise downtime and reduce long-term maintenance costs."
     />
+    <Footer />
+    </div>
   );
 }
