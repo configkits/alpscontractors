@@ -1,8 +1,8 @@
 import Navbar from '@/components/navbar'
 import ServiceTemplate from './ServiceTemplate'
-import image1 from "../assets/services/industrialresin/IMG_4807-scaled-2880w.webp";
+import image1 from "../assets/services/Interiorepoxyfloors/GettyImages-1319836742-2880w.webp";
 import image2 from "../assets/services/industrialresin/IMG_7725-scaled-2880w.webp";
-import hero from "../assets/services/industrialresin/coatings-6-768x887-2880w.webp";
+import hero from "../assets/services/AntislipSolutions/7-2880w.webp";
 import Footer from '@/components/footer';
 import { Check, AlertTriangle, Layers, MapPin } from "lucide-react";
 
@@ -119,7 +119,7 @@ Different resin chemistries allow tailoring for performance needs:"
       />
 
       {/* ── ADVANTAGES ── */}
-      <section className="py-20 bg-white">
+      <section className="pb-20 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-serif text-primary mb-2 border-l-4 border-accent pl-6">
             Advantages of Epoxy Flooring
@@ -141,7 +141,7 @@ Different resin chemistries allow tailoring for performance needs:"
       </section>
 
       {/* ── LIMITATIONS ── */}
-      <section className="py-20 bg-muted/20">
+      <section className="pb-20 bg-muted/20">
         <div className="container mx-auto px-6 ">
           <h2 className="text-3xl font-serif text-primary mb-2 border-l-4 border-accent pl-6">
             Limitations &amp; Installation Requirements
@@ -166,7 +166,7 @@ Different resin chemistries allow tailoring for performance needs:"
       </section>
 
       {/* ── TYPICAL APPLICATIONS ── */}
-      <section className="py-20 bg-white">
+      <section className="pb-20 bg-white">
         <div className="container mx-auto px-6 ">
           <h2 className="text-3xl font-serif text-primary mb-2 border-l-4 border-accent pl-6">
             Typical Applications
@@ -189,7 +189,7 @@ Different resin chemistries allow tailoring for performance needs:"
       </section>
 
       {/* ── COMMON SYSTEM BUILD‑UPS ── */}
-      <section className="py-20 bg-muted/20">
+      <section className="pb-20 bg-muted/20">
         <div className="container mx-auto px-6 ">
           <h2 className="text-3xl font-serif text-primary mb-2 border-l-4 border-accent pl-6">
             Common System Build‑Ups
