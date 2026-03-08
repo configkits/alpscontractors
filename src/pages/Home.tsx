@@ -6,7 +6,6 @@ import {
 } from "lucide-react";
 import serviceOffice from "../assets/service-office.png";
 import vector from "../assets/vector/Vector.svg";
-import waterproofing from "../assets/waterproofing.png";
 import prodEpoxy from "../assets/product-epoxy.png";
 import prodPU from "../assets/product-pu.png";
 import prodRapid from "../assets/product-rapid.png";
@@ -21,6 +20,7 @@ import Hero from "@/components/hero";
 import IndustriesWeServe from "@/components/IndustriesWeServe";
 import WhyChooseUs from "@/components/whyChooseUs";
 import AdvertisementBanner from "@/components/advertisementBanner";
+import image1 from "../assets/blog-1.png";
 
 export default function Home() {
   return (
@@ -71,7 +71,7 @@ export default function Home() {
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl relative z-10">
                 <img
-                  src={waterproofing}
+                  src={image1}
                   alt="Waterproofing Systems"
                   className="w-full h-full object-cover"
                 />
