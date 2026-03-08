@@ -37,7 +37,7 @@ import {
   workImage8,
   workImage9,
 } from "@/assets/work";
-import { Shield, Star, Zap } from "lucide-react";
+import { BadgeCheck, ClipboardCheck} from "lucide-react";
 
 export const DATA = {
   location: "Auckland, NZ",
@@ -271,32 +271,23 @@ export const DATA = {
     },
   ],
   advertisement: [
-     {
-      badge: "Limited Offer",
-      headline: "Free Slip Resistance",
-      highlight: "Assessment",
-      sub: "Book any commercial project this month and receive a complimentary NZ-certified slip resistance audit.",
-      cta: "Claim Offer",
-      ctaSecondary: "Learn More",
-      icon: Shield,
+    {
+      badge: "Free Offer",
+      headline: "Wet Pendulum Slip",
+      highlight: "Resistance Test",
+      sub: "Full certified report included. Valued at $480 + GST — complimentary for qualifying projects.",
+      cta: "Claim Now",
+      ctaSecondary: "What's Included",
+      icon: ClipboardCheck,
     },
     {
-      badge: "New Service",
-      headline: "Rapid Cure Systems —",
-      highlight: "48-Hour Turnaround",
-      sub: "Minimal downtime. Maximum performance. MMA resin systems that cure fast so your business keeps moving.",
-      cta: "Get a Quote",
-      ctaSecondary: "See Systems",
-      icon: Zap,
-    },
-    {
-      badge: "Trusted by Industry",
-      headline: "500+ Projects",
-      highlight: "Across New Zealand",
-      sub: "From food processing plants to commercial kitchens — ALPS delivers flooring systems built to last.",
-      cta: "View Projects",
-      ctaSecondary: "Our Clients",
-      icon: Star,
-    },
+      badge: "NATA Certified",
+      headline: "AU/NZ Standards",
+      highlight: "Slip Resistance Test",
+      sub: "NATA-certified wet pendulum test with full report, available on request. Valued at $520 + GST.",
+      cta: "Request Test",
+      ctaSecondary: "What's Included",
+      icon: BadgeCheck,
+    }
   ]
 };
