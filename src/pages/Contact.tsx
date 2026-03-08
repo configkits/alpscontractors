@@ -20,7 +20,7 @@ export default function Contact() {
             <h1 className="text-4xl md:text-6xl font-serif text-primary mb-6 text-center">
               Contact Us
             </h1>
-            <p className="text-2xl text-muted-foreground mb-3 text-center max-w-2xl mx-auto">
+            <p className="text-3xl md:text-4xl text-muted-foreground mb-3 text-center max-w-5xl mx-auto">
               Contact <span className="font-bold text-accent">Alps</span> Contractors for Resin Flooring and Waterproofing Solutions Across Auckland and Surrounding Areas
             </p>
             <p className="text-xl text-muted-foreground mb-12 text-center max-w-2xl mx-auto">

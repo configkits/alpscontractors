@@ -21,6 +21,10 @@ import SlipResistanceTesting from "./pages/SlipResistanceTesting";
 import HealthAndSupport from "./pages/HealthAndSupport";
 import AboutUs from "./pages/AboutUs";
 import { useEffect } from "react";
+import EpoxyResinFlooring from "./pages/EpoxyResinFlooring";
+import PolyurethaneScreed from "./pages/PolyurethaneScreed";
+import RapidCureCoating from "./pages/RapidCureCoating";
+import SlipResistantCoating from "./pages/SlipResistantCoating";
 
 
 function Router() {
@@ -42,6 +46,12 @@ function Router() {
       <Route path="/services/pool-coating" component={PoolCoating} />
       <Route path="/services/concrete-repairs" component={ConcreteRepairs} />
       <Route path="/services/interior-epoxy" component={InteriorEpoxy} />
+      
+      <Route path="/services/epoxy-resin-flooring" component={EpoxyResinFlooring} />
+      <Route path="/services/polyurethane-screed" component={PolyurethaneScreed} />
+      <Route path="/services/rapid-cure-coating" component={RapidCureCoating} />
+      <Route path="/services/slip-resistant-coating" component={SlipResistantCoating} />
+
       {/* <Route path="/services/why-epoxy" component={WhyEpoxy} /> */}
       <Route path="/our-work" component={OurWork} />
       <Route path="/contact" component={Contact} />

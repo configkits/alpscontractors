@@ -5,6 +5,7 @@ import aboutus from "../assets/Picture1.png"
 import { DATA } from "@/data";
 
 import healthandsafety from "@/assets/5-1920w.jpg";
+import heroImg from "../assets/1772419740445.jpeg";
 import { Plus } from "lucide-react";
 
 const HealthandSupport = () => {
@@ -60,10 +61,10 @@ const HealthandSupport = () => {
               </p>
 
               <p>
-                It is our policy to take all reasonably practical steps to comply
-                with the provisions of the Health and Safety at Work Act 2015,
-                all relevant regulations, codes practices, and best practice
-                guidelines, which apply to our business.
+                It is our policy to take all reasonably practical steps to
+                comply with the provisions of the Health and Safety at Work Act
+                2015, all relevant regulations, codes practices, and best
+                practice guidelines, which apply to our business.
               </p>
 
               <p>
@@ -84,12 +85,51 @@ const HealthandSupport = () => {
         </div>
       </section>
 
+      <section className="py-20 bg-[#F4F3EF]">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+          {/* Content */}
+          <div>
+            <h2 className="text-3xl font-bold mb-6 uppercase">
+              ALPS Environmental Sustainability Policy
+            </h2>
+            <h2 className="text-xl font-bold mb-6 uppercase">
+              Our Approach to Environmental Management
+            </h2>
+
+            <div className="space-y-4 text-gray-700 leading-relaxed">
+              <p>
+                ALPS CONTRACTORS is dedicated to conducting all business activities in an environmentally responsible and sustainable manner.
+              </p>
+
+              <p>
+                 As a leading provider of resin flooring and waterproofing systems, we acknowledge our duty to 
+                 minimise environmental impact, meet all applicable environmental legislation, and consistently 
+                 enhance our environmental performance.
+
+              </p>
+
+            </div>
+          </div>
+
+           {/* Logo */}
+          <div className="flex justify-center">
+            <div className="bg-white rounded-2xl shadow-lg h-full w-full">
+              <img
+                src={heroImg}
+                alt="Site Safe Member"
+                className="h-full w-full object-contain rounded-2xl"
+              />
+            </div>
+          </div>
+        </div>
+
+       
+      </section>
 
       <section className="py-20 bg-white border-t border-gray-200">
         <div className="container mx-auto px-6 text-center mb-12">
-
           <h3 className="text-3xl md:text-4xl font-bold uppercase">
-            Certifications
+            Endorsed By
           </h3>
         </div>
 
@@ -119,11 +159,17 @@ const HealthandSupport = () => {
           </p>
           <p className="text-xl md:text-2xl font-serif">
             Call{" "}
-            <a href={`tel:${DATA.tel1.href}`} className="hover:underline hover:text-accent transition-colors">
+            <a
+              href={`tel:${DATA.tel1.href}`}
+              className="hover:underline hover:text-accent transition-colors"
+            >
               <span className="text-accent">{DATA.tel1.number}</span>
             </a>{" "}
-            OR {" "}
-            <a href={`tel:${DATA.tel2.href}`} className="hover:underline hover:text-accent transition-colors">
+            OR{" "}
+            <a
+              href={`tel:${DATA.tel2.href}`}
+              className="hover:underline hover:text-accent transition-colors"
+            >
               <span className="text-accent">{DATA.tel2.number}</span>
             </a>{" "}
             to discuss your next project with a team you can trust.

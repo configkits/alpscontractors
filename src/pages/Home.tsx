@@ -6,7 +6,6 @@ import {
 } from "lucide-react";
 import serviceOffice from "../assets/service-office.png";
 import vector from "../assets/vector/Vector.svg";
-import waterproofing from "../assets/waterproofing.png";
 import prodEpoxy from "../assets/product-epoxy.png";
 import prodPU from "../assets/product-pu.png";
 import prodRapid from "../assets/product-rapid.png";
@@ -20,10 +19,15 @@ import { Link } from "wouter";
 import Hero from "@/components/hero";
 import IndustriesWeServe from "@/components/IndustriesWeServe";
 import WhyChooseUs from "@/components/whyChooseUs";
+import AdvertisementBanner from "@/components/advertisementBanner";
+import image1 from "../assets/blog-1.png";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#fcfdfc] font-['Lexend_Deca'] ">
+
+      <AdvertisementBanner />
+
       {/* Main Navigation */}
       <Navbar />
 
@@ -67,7 +71,7 @@ export default function Home() {
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl relative z-10">
                 <img
-                  src={waterproofing}
+                  src={image1}
                   alt="Waterproofing Systems"
                   className="w-full h-full object-cover"
                 />
@@ -189,7 +193,7 @@ export default function Home() {
             <div className="lg:w-1/4">
               <div className="lg:sticky lg:top-28 space-y-4">
                 <h3 className="text-lg md:text-xl font-bold text-accent uppercase tracking-[0.4em] mb-6 text-center lg:text-left">
-                  Our Specializations
+                  Services
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3">
                   {DATA.specialization.map((item, i) => (
@@ -416,15 +420,20 @@ export default function Home() {
               </p>
             </div>
             <div className="gap-4 bg-white/5 p-6 md:p-12 rounded-3xl backdrop-blur-md text-white border justify-center border-white/10 shadow-2xl">
-              <div className="flex flex-row justify-evenly">
+              <div className="flex flex-col md:flex-row justify-evenly">
                 <div className="justify-items-center">
                   <div className="flex items-center gap-3 mb-4">
                     <Mail className="text-accent" />
                     <h2 className="text-2xl font-serif text-white">Email Us</h2>
                   </div>
+                  <div className="justify-items-center">
                   <a href={`mailto:${DATA.email}`}>
-                    <p className="text-white hover:text-white/70 ">{DATA.email}</p>
+                    <p className="text-white hover:text-white/70 transition cursor-pointer mb-3">
+                      {DATA.email}
+                    </p>
                   </a>
+                  </div>
+                  
                 </div>
 
                 <div className="justify-items-center">

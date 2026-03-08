@@ -19,6 +19,8 @@ import jacklink from "../assets/clients/Z2-1920w.png";
 import serivcfd from "../assets/clients/Z3-1920w.png";
 import nzpm from "../assets/clients/Z4-1920w.png";
 import naylorlove from "../assets/clients/naylorlove.png";
+import strongHold from "../assets/clients/ll.webp";
+
 import {
   workImage1,
   workImage10,
@@ -35,6 +37,7 @@ import {
   workImage8,
   workImage9,
 } from "@/assets/work";
+import { BadgeCheck, ClipboardCheck} from "lucide-react";
 
 export const DATA = {
   location: "Auckland, NZ",
@@ -160,6 +163,7 @@ export const DATA = {
     },
     {
       name: "Stronghold Group",
+      images: strongHold,
     },
   ],
   work: [
@@ -256,7 +260,7 @@ export const DATA = {
       url: "/services/pool-coating",
     },
     {
-      title: "SILICONE & SEALANT SOLUTIONS",
+      title: "SEALANT & SILICONE SOLUTIONS",
       desc: "Professional sealing systems for joints, glazing, façades, and waterproofing applications.",
       url: "/services/interior-epoxy",
     },
@@ -266,4 +270,24 @@ export const DATA = {
       url: "/services/concrete-repairs",
     },
   ],
+  advertisement: [
+    {
+      badge: "Free Offer",
+      headline: "Wet Pendulum Slip",
+      highlight: "Resistance Test",
+      sub: "Full certified report included. Valued at $480 + GST — complimentary for qualifying projects.",
+      cta: "Claim Now",
+      ctaSecondary: "What's Included",
+      icon: ClipboardCheck,
+    },
+    {
+      badge: "NATA Certified",
+      headline: "AU/NZ Standards",
+      highlight: "Slip Resistance Test",
+      sub: "NATA-certified wet pendulum test with full report, available on request. Valued at $520 + GST.",
+      cta: "Request Test",
+      ctaSecondary: "What's Included",
+      icon: BadgeCheck,
+    }
+  ]
 };

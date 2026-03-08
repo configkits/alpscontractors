@@ -2,9 +2,13 @@ import ServiceTemplate from "./ServiceTemplate";
 import image1 from "../assets/services/Concretepoolcoatingsolutions/22-2880w.webp";
 import image2 from "../assets/services/Concretepoolcoatingsolutions/GettyImages-1327252127-2880w.webp";
 import hero from "../assets/services/Concretepoolcoatingsolutions/GettyImages-1327252127-2880w.webp";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 export default function PoolCoating() {
   return (
+    <div className="min-h-screen bg-white page-transition">
+              <Navbar />
     <ServiceTemplate
       heroImage={hero}
       title="Pool Coating Solutions"
@@ -57,5 +61,7 @@ export default function PoolCoating() {
       descriptionTitle2="Correct Process, Premium Materials, Lasting Results"
       description2="Achieving a durable pool coating requires the right process, quality materials, and expert application. From thorough surface preparation and defect repairs to multi-layer coating and proper curing, every step is carefully managed to ensure lasting performance. Our detailed inspections help identify hidden issues early, allowing preventive repairs that protect your pool from future damage while delivering a flawless, long-lasting finish."
     />
+    <Footer />
+    </div>
   );
 }

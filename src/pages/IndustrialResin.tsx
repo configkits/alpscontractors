@@ -2,9 +2,13 @@ import ServiceTemplate from "./ServiceTemplate";
 import image1 from "../assets/services/industrialresin/IMG_4807-scaled-2880w.webp";
 import image2 from "../assets/services/industrialresin/IMG_7725-scaled-2880w.webp";
 import hero from "../assets/services/industrialresin/coatings-6-768x887-2880w.webp";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 export default function IndustrialResin() {
   return (
+    <div className="min-h-screen bg-white page-transition">
+              <Navbar />
     <ServiceTemplate
       //badge="Industrial Flooring Specialists"
       heroImage={hero}
@@ -87,5 +91,7 @@ export default function IndustrialResin() {
       descriptionTitle2="Customised Solutions for Your Industry"
       description2="Every project we take on is unique, and so are the resin systems we install. For the food and beverage industry, epoxy resin flooring can be tailored with hygienic, food-safe properties to meet strict health standards. Breweries often require specialist solutions such as sloped floors for drainage and additional slip resistance. In industrial settings, demarcation and line-marking systems can be included to separate production areas, loading bays, and pedestrian zones, improving both safety and workflow. Our goal is to understand your requirements and deliver a resin flooring solution that’s designed specifically for your business or property."
     />
+    <Footer />
+    </div>
   );
 }

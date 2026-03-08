@@ -6,12 +6,12 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import detailImg from "../assets/hero-bg.png";
-import heroImg from "../assets/hero-bg.png";
+import detailImg from "../assets/1772419738798.jpeg";
+import heroImg from "../assets/1772419740445.jpeg";
 import Navbar from '@/components/navbar'
 import Footer from "@/components/footer";
-import blog1 from "../assets/blog-1.png";
-import prodEpoxy from "../assets/product-epoxy.png";
+import blog1 from "../assets/1772419740987.jpeg";
+import prodEpoxy from "../assets/1772419740637.jpeg";
 import { DATA } from "@/data";
 import { workImage1 } from "@/assets/work";
 
@@ -164,6 +164,140 @@ const SlipResistanceTesting = () => {
           </p>
         </div>
       </section>
+
+      {/* Workflow Section */}
+      <section className="py-24 bg-white overflow-hidden">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-3 mb-4">
+              <span className="text-xs font-bold text-accent uppercase tracking-[0.4em]">
+                Our Process
+              </span>
+            </div>
+            <h2 className="text-3xl md:text-5xl font-serif text-primary">
+              Slip Resistance Testing Process
+            </h2>
+          </div>
+
+          {/* Steps */}
+          <div className="relative max-w-4xl mx-auto">
+            {/* Vertical connector line */}
+            <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-accent/20 -translate-x-1/2 hidden md:block" />
+
+            {[
+              {
+                step: "01",
+                title: "Slip Resistance Test",
+                desc: "We measure the slip resistance of your flooring against current New Zealand standards to ensure it meets required safety and compliance levels.",
+              },
+              {
+                step: "02",
+                title: "Sample Application",
+                desc: "A small test area can be treated first, allowing you to clearly see the improvement before full application.",
+              },
+              {
+                step: "03",
+                title: "Full Application",
+                desc: "Our experienced applicators apply the treatment or coating efficiently, ensuring a quality finish with minimal disruption.",
+              },
+              {
+                step: "04",
+                title: "Report / Certificate",
+                desc: "You will receive a certification document confirming compliance and safety.",
+              },
+              {
+                step: "05",
+                title: "Maintenance & Annual Check-Up",
+                desc: "We provide ongoing assistance to ensure long-lasting and reliable results.",
+              },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className={`relative flex flex-col md:flex-row items-start md:items-center gap-3 mb-5 ${
+                  i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                }`}
+              >
+                {/* Card */}
+                <div
+                  className={`w-full md:w-5/12 bg-muted/30 border border-border rounded-2xl p-7 shadow-sm hover:shadow-md transition-shadow ${
+                    i % 2 === 0 ? "md:text-right" : "md:text-left"
+                  }`}
+                >
+                  <span className="text-accent font-bold text-xs uppercase tracking-widest block mb-2">
+                    Step {item.step}
+                  </span>
+                  <h3 className="text-xl font-serif text-primary mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
+
+                {/* Center dot */}
+                <div className="hidden md:flex w-2/12 justify-center">
+                  <div className="w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center font-bold text-sm shadow-lg z-10">
+                    {i + 1}
+                  </div>
+                </div>
+
+                {/* Spacer for alternating layout */}
+                <div className="hidden md:block w-5/12" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Floor Safety Matters Section */}
+<section className="py-20 bg-primary text-white">
+  <div className="container mx-auto px-6">
+    <div className="text-center mb-14">
+      <div className="inline-flex items-center gap-3 mb-4">
+        <span className="text-xs font-bold text-accent uppercase tracking-[0.4em]">
+          The Stakes
+        </span>
+      </div>
+      <h2 className="text-3xl md:text-5xl font-serif">
+        Why Floor Safety Matters
+      </h2>
+    </div>
+
+    <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      {[
+        {
+          number: "01",
+          title: "One Slip Can Change a Life",
+          desc: "Falls often result in serious injuries, lengthy rehabilitation, and ongoing medical issues.",
+        },
+        {
+          number: "02",
+          title: "The Cost Adds Up Fast",
+          desc: "Insurance claims, lost productivity, and liability expenses total billions annually.",
+        },
+        {
+          number: "03",
+          title: "Prevention Is Proven",
+          desc: "Modern anti-slip treatments and coatings make floors safer, stronger, and regulation-ready.",
+        },
+      ].map((item, i) => (
+        <div
+          key={i}
+          className="relative border border-white/10 rounded-2xl p-8 bg-white/5 hover:bg-white/10 transition-colors group"
+        >
+          <span className="text-5xl font-serif text-accent group-hover:text-accent/40 transition-colors leading-none block mb-6">
+            {item.number}
+          </span>
+          <h3 className="text-xl font-serif mb-4">{item.title}</h3>
+          <p className="text-white/60 text-sm leading-relaxed">{item.desc}</p>
+          <div className="absolute bottom-0 left-8 right-8 h-px bg-accent/0 group-hover:bg-accent/40 transition-colors" />
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
       {/* FAQ Section */}
       <section className="py-24 bg-muted/20">
         <div className="container mx-auto px-6">

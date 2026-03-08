@@ -2,9 +2,13 @@ import ServiceTemplate from "./ServiceTemplate";
 import hero from "../assets/services/Interiorepoxyfloors/AdobeStock_607085035.webp";
 import image2 from "../assets/services/Interiorepoxyfloors/GettyImages-1319836742-2880w.webp";
 import image1 from "../assets/services/AntislipSolutions/208f52d2-770f-40dd-89d0-558f3795777f-1-2880w.webp";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 export default function InteriorEpoxy() {
   return (
+    <div className="min-h-screen bg-white page-transition">
+              <Navbar />
     <ServiceTemplate
       heroImage={hero}
       title="Interior Epoxy Floors"
@@ -62,5 +66,7 @@ export default function InteriorEpoxy() {
       descriptionTitle2="Our Professional Epoxy Flooring Process"
       description2="We follow a proven installation process to ensure long-term performance. This includes detailed surface inspection, concrete grinding, moisture testing, and professional primer application before installing the epoxy coating system. Multiple layers may be applied depending on durability and design requirements. After proper curing and final inspection, the result is a seamless interior epoxy floor built to withstand Auckland’s demanding environments."
     />
+    <Footer />
+    </div>
   );
 }

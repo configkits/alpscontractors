@@ -2,9 +2,13 @@ import ServiceTemplate from "./ServiceTemplate";
 import image1 from "../assets/services/Liquidwaterproofing/12-2880w.webp";
 import image2 from "../assets/services/Liquidwaterproofing/4a-2880w.webp";
 import hero from "../assets/services/Liquidwaterproofing/GettyImages-1319822681-2880w.webp";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 export default function LiquidWaterproofing() {
   return (
+    <div className="min-h-screen bg-white page-transition">
+              <Navbar />
     <ServiceTemplate
       heroImage={hero}
       title="Liquid Waterproofing Solutions"
@@ -99,5 +103,7 @@ export default function LiquidWaterproofing() {
       descriptionTitle2="Why Choose Alps Contractors"
       description2="With decades of experience, Alps Contractors delivers liquid waterproofing solutions designed for performance, safety, and longevity. We provide expert advice tailored to your project—whether you need UV resistance, elasticity for movement, or chemical durability. From consultation to installation and maintenance, our focus is on reliable protection, environmentally responsible systems, and professional results delivered on time and within budget."
     />
+    <Footer />
+    </div>
   );
 }

@@ -1,6 +1,4 @@
 import { Check, Plus, type LucideIcon } from "lucide-react";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
 import waterproofingHero from "@/assets/waterproofing.png";
 import {
   Accordion,
@@ -70,8 +68,7 @@ export default function ServiceTemplate({
   cta,
 }: Props) {
   return (
-    <div className="min-h-screen bg-white page-transition">
-      <Navbar />
+    <>
 
       {/* HERO */}
       <section className="relative py-20 bg-primary text-white overflow-hidden">
@@ -253,7 +250,7 @@ export default function ServiceTemplate({
         </section>
       )}
 
-      <Footer />
-    </div>
+</>
+      
   );
 }
