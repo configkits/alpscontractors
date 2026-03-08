@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { X, ChevronRight, ArrowRight, type LucideIcon } from "lucide-react";
 import { DATA } from "@/data";
+import { Link } from "wouter";
 
 interface Slide {
   badge: string;
@@ -14,7 +15,7 @@ interface Slide {
 
 const slides: Slide[] = DATA.advertisement;
 
-const AdvertisementBanner= () => {
+const AdvertisementBanner = () => {
   const [visible, setVisible] = useState<boolean>(true);
   const [current, setCurrent] = useState<number>(0);
   const [animating, setAnimating] = useState<boolean>(false);
@@ -61,36 +62,44 @@ const AdvertisementBanner= () => {
 
   return (
     <div className="relative bg-primary overflow-hidden border-b border-accent/20 font-['Lexend_Deca']">
-
       {/* Diagonal accent shape */}
       <div className="absolute right-0 top-0 h-full w-64 bg-accent/5 skew-x-12 translate-x-20 pointer-events-none" />
 
       {/* Content row */}
-      <div className="relative z-10 container mx-auto px-4 md:px-6">
-        <div className="flex items-center justify-between h-14 gap-3">
+      <div className="relative z-10 container mx-auto px-3 sm:px-4 md:px-6">
+        <div className="flex items-center justify-between gap-2 sm:gap-3 h-14">
 
           {/* LEFT */}
-          <div className="flex items-center gap-3 flex-1 min-w-0">
+          <div className="flex items-center gap-2 sm:gap-3 flex-1 min-w-0">
 
+            {/* Badge — hidden on mobile */}
             <span className="hidden sm:inline-flex shrink-0 items-center text-[9px] font-bold tracking-[0.2em] uppercase text-primary bg-accent px-2.5 py-1 rounded-sm">
               {slide.badge}
             </span>
 
+            {/* Divider — hidden on mobile */}
             <div className="hidden sm:block w-px h-6 bg-accent/25 shrink-0" />
 
-            <div className="shrink-0 w-7 h-7 rounded-full border border-accent/30 bg-accent/10 flex items-center justify-center">
-              <Icon size={13} className="text-accent" />
+            {/* Icon */}
+            <div className="shrink-0 w-6 h-6 sm:w-7 sm:h-7 rounded-full border border-accent/30 bg-accent/10 flex items-center justify-center">
+              <Icon size={12} className="text-accent" />
             </div>
 
+            {/* Headline block */}
             <div
-              className={`flex items-baseline gap-2 min-w-0 transition-all duration-300 ${
-                animating ? "opacity-0 -translate-y-1" : "opacity-100 translate-y-0"
+              className={`flex flex-col sm:flex-row sm:items-baseline gap-0.5 sm:gap-2 min-w-0 transition-all duration-300 ${
+                animating
+                  ? "opacity-0 -translate-y-1"
+                  : "opacity-100 translate-y-0"
               }`}
             >
-              <p className="font-serif text-sm md:text-[15px] font-bold text-white whitespace-nowrap shrink-0">
+              {/* Headline + highlight — wraps on mobile, nowrap on sm+ */}
+              <p className="font-serif text-[11px] sm:text-xs md:text-[15px] font-bold text-white leading-tight sm:whitespace-nowrap sm:shrink-0 line-clamp-2 sm:line-clamp-1">
                 {slide.headline}{" "}
                 <span className="text-accent">{slide.highlight}</span>
               </p>
+
+              {/* Separator + sub — desktop only */}
               <span className="hidden lg:block text-white/20 text-xs shrink-0">—</span>
               <p className="hidden lg:block text-[11px] text-white/50 truncate">
                 {slide.sub}
@@ -99,18 +108,25 @@ const AdvertisementBanner= () => {
           </div>
 
           {/* RIGHT */}
-          <div className="flex items-center gap-2 md:gap-3 shrink-0">
+          <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3 shrink-0">
 
-            <button className="hidden md:flex items-center gap-1 text-[10px] font-semibold tracking-[0.12em] uppercase text-white/50 hover:text-accent transition-colors duration-200">
-              {slide.ctaSecondary}
-              <ChevronRight size={10} />
-            </button>
+            {/* Secondary CTA — hidden on mobile */}
+            <Link to="/services/anti-slip">
+              <button className="hidden md:flex items-center gap-1 text-[10px] font-semibold tracking-[0.12em] uppercase text-white/50 hover:text-accent transition-colors duration-200">
+                {slide.ctaSecondary}
+                <ChevronRight size={10} />
+              </button>
+            </Link>
 
-            <button className="flex items-center gap-1.5 bg-accent hover:bg-accent/90 text-primary text-[10px] font-bold tracking-[0.15em] uppercase px-3.5 py-2 rounded-sm transition-all duration-200 hover:-translate-y-px shadow-sm">
-              {slide.cta}
-              <ArrowRight size={10} />
-            </button>
+            {/* Primary CTA */}
+            <Link to="/contact">
+              <button className="flex items-center gap-1 sm:gap-1.5 bg-accent hover:bg-accent/90 text-primary text-[9px] sm:text-[10px] font-bold tracking-[0.12em] sm:tracking-[0.15em] uppercase px-2.5 sm:px-3.5 py-1.5 sm:py-2 rounded-sm transition-all duration-200 hover:-translate-y-px shadow-sm whitespace-nowrap">
+                {slide.cta}
+                <ArrowRight size={9} className="sm:w-2.5 sm:h-2.5" />
+              </button>
+            </Link>
 
+            {/* Dot indicators — hidden on mobile */}
             <div className="hidden sm:flex items-center gap-1.5 pl-1">
               {slides.map((_, i) => (
                 <button
@@ -128,12 +144,13 @@ const AdvertisementBanner= () => {
 
             <div className="hidden sm:block w-px h-5 bg-white/10" />
 
+            {/* Dismiss button */}
             <button
               onClick={() => setVisible(false)}
               aria-label="Dismiss banner"
-              className="w-6 h-6 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 flex items-center justify-center text-white/40 hover:text-white transition-all duration-200"
+              className="w-5 h-5 sm:w-6 sm:h-6 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 flex items-center justify-center text-white/40 hover:text-white transition-all duration-200"
             >
-              <X size={11} />
+              <X size={10} className="sm:w-[11px] sm:h-[11px]" />
             </button>
           </div>
         </div>
