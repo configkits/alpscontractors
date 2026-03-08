@@ -46,6 +46,7 @@ function Router() {
       <Route path="/services/pool-coating" component={PoolCoating} />
       <Route path="/services/concrete-repairs" component={ConcreteRepairs} />
       <Route path="/services/interior-epoxy" component={InteriorEpoxy} />
+      
       <Route path="/services/epoxy-resin-flooring" component={EpoxyResinFlooring} />
       <Route path="/services/polyurethane-screed" component={PolyurethaneScreed} />
       <Route path="/services/rapid-cure-coating" component={RapidCureCoating} />
