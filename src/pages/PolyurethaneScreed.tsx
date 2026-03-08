@@ -4,9 +4,9 @@ import Footer from '@/components/footer'
 import { Thermometer, FlaskConical, ShieldCheck, Clock } from "lucide-react"
 
 // Replace these imports with the actual PU screed asset paths when available
-import image1 from "../assets/services/industrialresin/IMG_4807-scaled-2880w.webp";
-import image2 from "../assets/services/industrialresin/IMG_7725-scaled-2880w.webp";
-import hero from "../assets/services/industrialresin/coatings-6-768x887-2880w.webp";
+import image1 from "../assets/services/industrialresin/IMG_7725-scaled-2880w.webp";
+import image2 from "../assets/services/industrialresin/coatings-6-768x887-2880w.webp";
+import hero from "../assets/services/industrialresin/IMG_4807-scaled-2880w.webp";
 
 const thicknessOptions = [
   {
@@ -112,7 +112,7 @@ const PolyurethaneScreed = () => {
       />
 
       {/* ── SYSTEM THICKNESS OPTIONS ── */}
-      <section className="py-16 bg-white">
+      <section className="pb-20 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-serif text-primary mb-2 border-l-4 border-accent pl-6">
             System Thickness Options
@@ -146,7 +146,7 @@ const PolyurethaneScreed = () => {
       </section>
 
       {/* ── IDEAL APPLICATIONS ── */}
-      <section className="py-16 bg-muted/20">
+      <section className="pb-20 bg-muted/20">
         <div className="container mx-auto px-6 ">
           <h2 className="text-3xl font-serif text-primary mb-2 border-l-4 border-accent pl-6">
             Ideal Applications

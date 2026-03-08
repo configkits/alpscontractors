@@ -163,7 +163,7 @@ const RapidCureCoating = () => {
       />
 
       {/* ── WHAT RAPID CURE REALLY MEANS ── */}
-      <section className="py-16 bg-white">
+      <section className="pb-20 bg-white">
         <div className="container mx-auto px-6 ">
           <h2 className="text-3xl font-serif text-primary mb-2 border-l-4 border-accent pl-6">
             What "Rapid Cure" Really Means
@@ -191,7 +191,7 @@ const RapidCureCoating = () => {
       </section>
 
       {/* ── CORE TECHNOLOGIES ── */}
-      <section className="py-16 bg-muted/20">
+      <section className="pb-20 bg-muted/20">
         <div className="container mx-auto px-6 ">
           <h2 className="text-3xl font-serif text-primary mb-2 border-l-4 border-accent pl-6">
             Core Rapid Cure Technologies
@@ -223,7 +223,7 @@ const RapidCureCoating = () => {
       </section>
 
       {/* ── KEY ADVANTAGES ── */}
-      <section className="py-16 bg-white">
+      <section className="pb-20 bg-white">
         <div className="container mx-auto px-6 ">
           <h2 className="text-3xl font-serif text-primary mb-2 border-l-4 border-accent pl-6">
             Key Advantages
@@ -251,7 +251,7 @@ const RapidCureCoating = () => {
       </section>
 
       {/* ── TYPICAL APPLICATIONS ── */}
-      <section className="py-16 bg-muted/20">
+      <section className="pb-20 bg-muted/20">
         <div className="container mx-auto px-6 ">
           <h2 className="text-3xl font-serif text-primary mb-2 border-l-4 border-accent pl-6">
             Typical Applications
@@ -276,7 +276,7 @@ const RapidCureCoating = () => {
       </section>
 
       {/* ── CHOOSING THE RIGHT SYSTEM ── */}
-      <section className="py-16 bg-white">
+      <section className="pb-20 bg-white">
         <div className="container mx-auto px-6 ">
           <h2 className="text-3xl font-serif text-primary mb-2 border-l-4 border-accent pl-6">
             Choosing the Right Rapid Cure System

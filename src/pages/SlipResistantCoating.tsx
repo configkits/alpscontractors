@@ -4,9 +4,9 @@ import Footer from '@/components/footer'
 import { ShieldCheck, Building2, Home, SlidersHorizontal, Droplets } from "lucide-react"
 
 // Replace these imports with the actual asset paths when available
-import image1 from "../assets/services/industrialresin/IMG_4807-scaled-2880w.webp";
-import image2 from "../assets/services/industrialresin/IMG_7725-scaled-2880w.webp";
-import hero from "../assets/services/industrialresin/coatings-6-768x887-2880w.webp";
+import image1 from "../assets/services/AntislipSolutions/208f52d2-770f-40dd-89d0-558f3795777f-1-2880w.webp";
+import image2 from "../assets/services/AntislipSolutions/7-2880w.webp";
+import hero from "../assets/services/AntislipSolutions/5-2880w.webp";
 
 const applicationAreas = [
   {
@@ -136,7 +136,7 @@ const SlipResistantCoating = () => {
       />
 
       {/* ── WHERE SLIP RESISTANT COATINGS ARE USED ── */}
-      <section className="py-16 bg-white">
+      <section className="pb-20 bg-white">
         <div className="container mx-auto px-6 ">
           <h2 className="text-3xl font-serif text-primary mb-2 border-l-4 border-accent pl-6">
             Where Slip Resistant Coatings Are Used
@@ -169,7 +169,7 @@ const SlipResistantCoating = () => {
       </section>
 
       {/* ── COMMON COATING TYPES ── */}
-      <section className="py-16 bg-muted/20">
+      <section className="pb-20 bg-muted/20">
         <div className="container mx-auto px-6 ">
           <h2 className="text-3xl font-serif text-primary mb-2 border-l-4 border-accent pl-6">
             Common Coating Types
@@ -200,7 +200,7 @@ const SlipResistantCoating = () => {
       </section>
 
       {/* ── SELECTING THE RIGHT SYSTEM ── */}
-      <section className="py-16 bg-white">
+      <section className="pb-20 bg-white">
         <div className="container mx-auto px-6 ">
           <h2 className="text-3xl font-serif text-primary mb-2 border-l-4 border-accent pl-6">
             Selecting the Right Slip Resistant System

@@ -21,6 +21,7 @@ import IndustriesWeServe from "@/components/IndustriesWeServe";
 import WhyChooseUs from "@/components/whyChooseUs";
 import AdvertisementBanner from "@/components/advertisementBanner";
 import image1 from "../assets/blog-1.png";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -237,23 +238,28 @@ export default function Home() {
                     title: "Epoxy Resin Systems",
                     desc: "Heavy-duty epoxy systems designed for chemical resistance and extreme durability.",
                     img: prodEpoxy,
+                    link: "/services/epoxy-resin-flooring"
                   },
                   {
                     title: "Polyurethane Screeds",
                     desc: "Thermal shock resistant flooring ideal for food processing and industrial kitchens.",
                     img: prodPU,
+                    link: "/services/polyurethane-screed"
                   },
                   {
                     title: "Rapid Cure Coatings",
                     desc: "Fast-turnaround floor solutions that minimize downtime for busy commercial spaces.",
                     img: prodRapid,
+                    link: "/services/rapid-cure-coating"
                   },
                   {
                     title: "Slip Resistance Coating",
                     desc: "Certified anti-slip treatments that meet or exceed NZ safety standards.",
                     img: prodSlip,
+                    link: "/services/slip-resistant-coating"
                   },
                 ].map((product, i) => (
+                  <Link key={i} href={product.link}>
                   <Card
                     key={i}
                     className="group hover:shadow-2xl transition-all duration-500 border-none overflow-hidden bg-white rounded-2xl"
@@ -265,9 +271,9 @@ export default function Home() {
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                       />
                       <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-500" />
-                      {/* <div className="absolute bottom-4 right-4 bg-accent w-12 h-12 flex items-center justify-center rounded-xl opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 shadow-lg">
+                      <div className="absolute bottom-4 right-4 bg-accent w-12 h-12 flex items-center justify-center rounded-xl opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 shadow-lg">
                         <ChevronRight className="text-white" size={24} />
-                      </div> */}
+                      </div>
                     </div>
                     <CardContent className="p-6 md:p-8">
                       <h3 className="text-xl md:text-2xl font-serif text-primary mb-3">
@@ -276,7 +282,7 @@ export default function Home() {
                       <p className="text-sm md:text-base text-muted-foreground mb-6 leading-relaxed line-clamp-2">
                         {product.desc}
                       </p>
-                      {/* <Button
+                      <Button
                         variant="link"
                         className="text-accent p-0 font-bold hover:no-underline text-xs tracking-[0.2em] uppercase"
                       >
@@ -285,9 +291,10 @@ export default function Home() {
                           size={14}
                           className="ml-2 group-hover:translate-x-1 transition-transform"
                         />
-                      </Button> */}
+                      </Button>
                     </CardContent>
                   </Card>
+                  </Link>
                 ))}
               </div>
             </div>
