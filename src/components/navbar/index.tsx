@@ -20,6 +20,10 @@ const services = [
   { name: "Concrete Pool Coating Solutions", path: "/services/pool-coating" },
   { name: "Interior Epoxy Floors", path: "/services/interior-epoxy" },
   { name: "Concrete Repairs", path: "/services/concrete-repairs" },
+  { name: "Epoxy Resin Flooring Systems", path: "/services/epoxy-resin-flooring" },
+  { name: "Polyurethane Screed Systems", path: "/services/polyurethane-screed" },
+  { name: "Rapid Cure Coating Systems", path: "/services/rapid-cure-coating" },
+  { name: "Slip Resistant Coating Systems", path: "/services/slip-resistant-coating" },
 ];
 
 const navLinks = [
