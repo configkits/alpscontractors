@@ -17,8 +17,8 @@ const services = [
   { name: "Industrial Resin Flooring Solutions", path: "/services/industrial-resin" },
   { name: "Liquid Waterproofing Solutions", path: "/services/liquid-waterproofing" },
   { name: "Anti-Slip Solutions", path: "/services/anti-slip" },
-  { name: "Concrete Pool Coating Solutions", path: "/services/pool-coating" },
-  { name: "Interior Epoxy Floors", path: "/services/interior-epoxy" },
+  { name: "Swimming Pool Coating Solutions", path: "/services/pool-coating" },
+  { name: "Sealant & Silicone Application", path: "/services/sealant-silicone-application" },
   { name: "Concrete Repairs", path: "/services/concrete-repairs" },
 ];
 
