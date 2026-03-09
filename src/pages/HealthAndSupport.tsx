@@ -5,7 +5,7 @@ import aboutus from "../assets/Picture1.png"
 import { DATA } from "@/data";
 
 import healthandsafety from "@/assets/5-1920w.jpg";
-import heroImg from "../assets/1772419740445.jpeg";
+import heroImg from "../assets/blog-3.png";
 import { Plus } from "lucide-react";
 
 const HealthandSupport = () => {
@@ -90,9 +90,6 @@ const HealthandSupport = () => {
           {/* Content */}
           <div>
             <h2 className="text-3xl font-bold mb-6 uppercase">
-              ALPS Environmental Sustainability Policy
-            </h2>
-            <h2 className="text-xl font-bold mb-6 uppercase">
               Our Approach to Environmental Management
             </h2>
 
