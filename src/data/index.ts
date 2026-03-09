@@ -262,7 +262,7 @@ export const DATA = {
     {
       title: "SEALANT & SILICONE SOLUTIONS",
       desc: "Professional sealing systems for joints, glazing, façades, and waterproofing applications.",
-      url: "/services/interior-epoxy",
+      url: "/services/sealant-silicone-application",
     },
     {
       title: "CONCRETE REPAIRS",

@@ -25,6 +25,7 @@ import EpoxyResinFlooring from "./pages/EpoxyResinFlooring";
 import PolyurethaneScreed from "./pages/PolyurethaneScreed";
 import RapidCureCoating from "./pages/RapidCureCoating";
 import SlipResistantCoating from "./pages/SlipResistantCoating";
+import SealantSiliconeApplication from "./pages/SealantSiliconeApplication";
 
 
 function Router() {
@@ -46,6 +47,8 @@ function Router() {
       <Route path="/services/pool-coating" component={PoolCoating} />
       <Route path="/services/concrete-repairs" component={ConcreteRepairs} />
       <Route path="/services/interior-epoxy" component={InteriorEpoxy} />
+
+      <Route path="/services/sealant-silicone-application" component={SealantSiliconeApplication} />
       
       <Route path="/services/epoxy-resin-flooring" component={EpoxyResinFlooring} />
       <Route path="/services/polyurethane-screed" component={PolyurethaneScreed} />
