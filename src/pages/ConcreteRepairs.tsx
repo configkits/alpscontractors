@@ -43,9 +43,9 @@ export default function ConcreteRepairs() {
         },
       ]}
       stats={[
-        { value: "25+ Years", label: "Waterproofing Experience" },
-        { value: "Seamless Systems", label: "Advanced Liquid Membranes" },
-        { value: "Fast Curing", label: "Rain-Safe Within Hours" },
+        { value: "25+ Years", label: "Industrial Experience" },
+        { value: "Concrete Crack Repairs", label: "Injection and Sealing Methods" },
+        { value: "Site Inspections", label: "Right Repair Solutions" },
       ]}
       benefitTitle={"Industry Applications We Specialise In"}
       benefits={[

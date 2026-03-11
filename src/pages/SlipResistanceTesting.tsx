@@ -376,10 +376,6 @@ const SlipResistanceTesting = () => {
             <a href={`tel:${DATA.tel1.href}`} className="hover:underline hover:text-accent transition-colors">
               <span className="text-accent">{DATA.tel1.number}</span>
             </a>{" "}
-            OR {" "}
-            <a href={`tel:${DATA.tel2.href}`} className="hover:underline hover:text-accent transition-colors">
-              <span className="text-accent">{DATA.tel2.number}</span>
-            </a>
           </p>
         </div>
       </section>

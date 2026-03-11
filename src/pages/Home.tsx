@@ -302,79 +302,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Partners Section */}
-      <section className="py-24 bg-white border-y overflow-hidden">
-        <div className="container mx-auto px-6 mb-12">
-          <div className="text-center">
-            <h2 className="text-sm font-bold text-accent uppercase tracking-[0.3em] mb-4">
-              Strategic Collaboration
-            </h2>
-            <h3 className="text-4xl font-serif text-primary">
-              Our Trusted Partners
-            </h3>
-          </div>
-        </div>
-
-        <div className="relative">
-          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10" />
-          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10" />
-
-          <div className="flex whitespace-nowrap animate-marquee-right ">
-            {[...Array(2)].map((_, i) => (
-              <div key={i} className="flex gap-8 px-4">
-                {DATA.partner.map((data, idx) => (
-                  <a href={data.url}>
-                    <div
-                      key={`${data.name}-${idx}`}
-                      className="w-48 h-28 bg-primary/50 rounded-xl flex items-center justify-center p-6 hover:grayscale-0 transition-all  hover:opacity-100 border border-transparent hover:border-accent flex-shrink-0"
-                    >
-                      <img
-                        src={data.images}
-                        alt={`Partner ${data.name}`}
-                        className="max-h-full max-w-full object-contain"
-                      />
-                    </div>
-                  </a>
-                ))}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Reviews */}
-      
-
-      {/* Clients Section */}
-      <section className="py-16 md:py-24 bg-muted/20 border-y overflow-hidden">
-        <div className="container mx-auto px-6 mb-12 text-center">
-          <h3 className="text-3xl md:text-4xl font-serif text-primary">
-            Some of Our Clients
-          </h3>
-        </div>
-
-        <div className="relative overflow-hidden">
-          <div className="flex whitespace-nowrap animate-marquee hover:[animation-play-state:paused]">
-            {DATA.client.map((client, i) => (
-              <div key={i} className="flex gap-4 md:gap-8 px-2 md:px-4">
-                {client.images && (
-                  <div
-                    key={i}
-                    className="w-32 md:w-48 h-20 md:h-28 bg-white rounded-xl shadow-sm flex items-center justify-center p-4 md:p-4 hover:grayscale-0 transition-all  hover:opacity-100 border border-transparent hover:border-accent/20 flex-shrink-0"
-                  >
-                      <img
-                        src={client.images}
-                        alt={`Client ${client.name}`}
-                        className="max-h-full max-w-full object-contain"
-                      />
-                    </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <WhyChooseUs/>
 
       {/* Certifications  Section */}
@@ -407,7 +334,77 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Partners Section */}
+      <section className="py-24 bg-white border-y overflow-hidden">
+        <div className="container mx-auto px-6 mb-12">
+          <div className="text-center">
+            <h2 className="text-sm font-bold text-accent uppercase tracking-[0.3em] mb-4">
+              Strategic Collaboration
+            </h2>
+            <h3 className="text-4xl font-serif text-primary">
+              Our Trusted Partners
+            </h3>
+          </div>
+        </div>
+
+        <div className="relative">
+          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10" />
+          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10" />
+
+          <div className="flex whitespace-nowrap animate-marquee-right ">
+            {[...Array(2)].map((_, i) => (
+              <div key={i} className="flex gap-8 px-4">
+                {DATA.partner.map((data, idx) => (
+                  <a href={data.url}>
+                    <div
+                      key={`${data.name}-${idx}`}
+                      className="w-48 h-28 bg-white hover:inset-shadow-sm rounded-xl flex items-center justify-center p-6 hover:grayscale-0 transition-all  hover:opacity-100 border border-transparent hover:border-accent flex-shrink-0"
+                    >
+                      <img
+                        src={data.images}
+                        alt={`Partner ${data.name}`}
+                        className="max-h-full max-w-full object-contain"
+                      />
+                    </div>
+                  </a>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       
+      {/* Clients Section */}
+      <section className="py-16 md:py-24 bg-muted/20 border-y overflow-hidden">
+        <div className="container mx-auto px-6 mb-12 text-center">
+          <h3 className="text-3xl md:text-4xl font-serif text-primary">
+            Some of Our Clients
+          </h3>
+        </div>
+
+        <div className="relative overflow-hidden">
+          <div className="flex whitespace-nowrap animate-marquee hover:[animation-play-state:paused]">
+            {DATA.client.map((client, i) => (
+              <div key={i} className="flex gap-4 md:gap-8 px-2 md:px-4">
+                {client.images && (
+                  <div
+                    key={i}
+                    className="w-32 md:w-48 h-20 md:h-28 bg-white rounded-xl shadow-sm flex items-center justify-center p-4 md:p-4 hover:grayscale-0 transition-all  hover:opacity-100 border border-transparent hover:border-accent/20 flex-shrink-0"
+                  >
+                      <img
+                        src={client.images}
+                        alt={`Client ${client.name}`}
+                        className="max-h-full max-w-full object-contain"
+                      />
+                    </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section
         id="contact"
@@ -454,14 +451,6 @@ export default function Home() {
                   <a href={`tel:${DATA.tel1.withCode}`}>
                     <p className="text-white hover:text-white/70 transition cursor-pointer">
                       {DATA.tel1.number}
-                    </p>
-                  </a>
-                  </div>
-
-                  <div className="justify-items-center">
-                  <a href={`tel:${DATA.tel2.withCode}`}>
-                    <p className="text-white hover:text-white/70 transition cursor-pointer">
-                      {DATA.tel2.number}
                     </p>
                   </a>
                   </div>

@@ -1,11 +1,11 @@
 
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
-import aboutus from "../assets/Picture1.png"
+import aboutus from "../assets/helpandSupport/IMG_3683.webp"
 import { DATA } from "@/data";
 
 import healthandsafety from "@/assets/5-1920w.jpg";
-import heroImg from "../assets/blog-3.png";
+import heroImg from "../assets/helpandSupport/IMG_3684.webp";
 import { Plus } from "lucide-react";
 
 const HealthandSupport = () => {
@@ -161,13 +161,6 @@ const HealthandSupport = () => {
               className="hover:underline hover:text-accent transition-colors"
             >
               <span className="text-accent">{DATA.tel1.number}</span>
-            </a>{" "}
-            OR{" "}
-            <a
-              href={`tel:${DATA.tel2.href}`}
-              className="hover:underline hover:text-accent transition-colors"
-            >
-              <span className="text-accent">{DATA.tel2.number}</span>
             </a>{" "}
             to discuss your next project with a team you can trust.
           </p>

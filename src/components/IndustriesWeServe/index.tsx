@@ -4,7 +4,6 @@ const IndustriesWeServe = () => {
     <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-xs font-bold text-accent uppercase tracking-[0.4em] mb-4">Our Expertise</h2>
             <h3 className="text-3xl md:text-4xl font-serif text-primary cursor-default">Industries We Serve</h3>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

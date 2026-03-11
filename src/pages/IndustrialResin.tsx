@@ -43,14 +43,14 @@ export default function IndustrialResin() {
         "Pool surrounds, patios, and outdoor resin finishes",
       ]}
       stats={[
-        { value: "25+ Years", label: "Waterproofing Experience" },
+        { value: "25+ Years", label: "Industrial Experience" },
         { value: "Seamless Systems", label: "Advanced Liquid Membranes" },
-        { value: "Fast Curing", label: "Rain-Safe Within Hours" },
+        { value: "Fast Curing", label: "Within Hours" },
       ]}
       faqs={[
         {
           question:
-            "What are the benefits of epoxy resin flooring in Auckland?",
+            "What are the benefits of epoxy resin flooring?",
           answer:
             "Epoxy resin flooring provides exceptional durability, seamless finishes, chemical resistance, and long-term cost efficiency, making it ideal for Auckland’s industrial and commercial environments.",
         },

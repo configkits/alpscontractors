@@ -18,7 +18,7 @@ const Banner = () => {
               {DATA.tel1.number}
             </span>
           </a>
-          <a href={DATA.email}>
+          <a href={`mailto:${DATA.email}`}>
             <span className="flex items-center gap-1.5">
               <Mail size={14} className="text-accent" /> {DATA.email}
             </span>
@@ -30,7 +30,7 @@ const Banner = () => {
           </a>
         </div>
         <div className="flex gap-4 items-center">
-          <div className="flex gap-3 pr-4 border-r border-border">
+          <div className="flex gap-3 pr-4">
             <a
               href="https://facebook.com/alps"
               target="_blank"
@@ -48,15 +48,6 @@ const Banner = () => {
               <Linkedin className="w-5 h-5" />
             </a>
           </div>
-          <Link href="/blog" className="hover:text-accent transition-colors ">
-            News
-          </Link>
-          <Link
-            href="/contact"
-            className="hover:text-accent transition-colors "
-          >
-            Contact
-          </Link>
         </div>
       </div>
     </div>

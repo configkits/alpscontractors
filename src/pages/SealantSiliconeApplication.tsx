@@ -5,7 +5,7 @@ import { Flame, Waves, Grid3x3 } from "lucide-react"
 
 import hero from "../assets/services/Interiorepoxyfloors/AdobeStock_607085035.webp";
 import image2 from "../assets/services/Interiorepoxyfloors/GettyImages-1319836742-2880w.webp";
-import image1 from "../assets/services/AntislipSolutions/208f52d2-770f-40dd-89d0-558f3795777f-1-2880w.webp";
+import image1 from "../assets/services/Interiorepoxyfloors/IMG_3679.jpeg";
 
 
 const materialTypes = [
@@ -48,9 +48,9 @@ const SealantSiliconeApplication = () => {
         title="Sealant & Silicone Application"
         subtitle="Professional joint sealing and waterproofing for residential, commercial, and industrial buildings across Auckland"
         stats={[
-        { value: "25+ Years", label: "Waterproofing Experience" },
-        { value: "Seamless Systems", label: "Advanced Liquid Membranes" },
-        { value: "Fast Curing", label: "Rain-Safe Within Hours" },
+        { value: "25+ Years", label: "Industrial Experience" },
+        { value: "Range of Solutions", label: "Fire-rated &amp; Flexible" },
+        { value: "Weather Resistance", label: "Moisture, Rain, Humidity" },
       ]}
         descriptionTitle="Why Proper Joint Sealing Matters"
         description="ALPS Contractors' professional sealant and silicone application services ensure durable waterproofing, weatherproofing, and joint protection for residential, commercial, and industrial buildings. With Auckland's coastal climate and high humidity, proper joint sealing is essential to prevent water ingress, mould growth, and structural damage."
