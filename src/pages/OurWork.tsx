@@ -1,7 +1,6 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import { DATA } from "@/data";
-import { MapPin } from "lucide-react";
 
 export default function OurWork() {
 

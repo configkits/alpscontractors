@@ -4,7 +4,6 @@ import { DATA } from "@/data";
 import { 
     Phone, Mail, MapPin
 } from "lucide-react";
-import { Link } from "wouter";
 
 
 const Banner = () => {
