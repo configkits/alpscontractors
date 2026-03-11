@@ -1,7 +1,7 @@
 import ServiceTemplate from "./ServiceTemplate";
-import image1 from "../assets/services/Concretepoolcoatingsolutions/22-2880w.webp";
+import image1 from "../assets/services/Concretepoolcoatingsolutions/IMG_3677.jpeg";
 import image2 from "../assets/services/Concretepoolcoatingsolutions/GettyImages-1327252127-2880w.webp";
-import hero from "../assets/services/Concretepoolcoatingsolutions/GettyImages-1327252127-2880w.webp";
+import hero from "../assets/services/Concretepoolcoatingsolutions/AdobeStock_414877359-2880w.jpeg";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
@@ -38,9 +38,9 @@ export default function PoolCoating() {
         },
       ]}
       stats={[
-        { value: "25+ Years", label: "Waterproofing Experience" },
-        { value: "Seamless Systems", label: "Advanced Liquid Membranes" },
-        { value: "Fast Curing", label: "Rain-Safe Within Hours" },
+        { value: "25+ Years", label: "Industrial Experience" },
+        { value: "Professional Surface Preparation", label: "Proper Adhesion" },
+        { value: "Proper Curing process", label: "Ensure longevity" },
       ]}
       benefitTitle={"Industry Applications We Specialise In"}
       benefits={[

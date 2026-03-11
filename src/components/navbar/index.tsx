@@ -103,8 +103,8 @@ export default function Navbar() {
         {/* CTA + MOBILE MENU BUTTON */}
         <div className="flex items-center gap-4">
           <Link href="/contact">
-            <Button className="hidden sm:flex bg-accent text-white font-bold px-6">
-              GET A QUOTE
+            <Button className="hidden sm:flex bg-accent text-white font-bold px-4">
+              Request Site Inspection
             </Button>
           </Link>
 

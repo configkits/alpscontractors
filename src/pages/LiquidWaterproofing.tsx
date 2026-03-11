@@ -17,7 +17,7 @@ export default function LiquidWaterproofing() {
       description="Alps Contractors, Auckland, provides high-quality liquid waterproofing solutions backed by over 25 years of experience. Our liquid-applied systems create seamless, fully bonded membranes that prevent water ingress while resisting UV exposure, weathering, and surface wear. Suitable for roofs, balconies, terraces, planter boxes, and wet areas, we tailor each application to your substrate and project needs—working across concrete, timber, bitumen, zinc, and stone surfaces for durable, long-lasting protection."
       features={[
         {
-          title: "Seamless Waterproof Membranes",
+          title: "Seamless Waterproof Solutions",
           description:
             "Fully bonded liquid-applied coatings that prevent water ingress and leaks.",
         },
@@ -57,7 +57,7 @@ export default function LiquidWaterproofing() {
       ]}
       stats={[
         { value: "25+ Years", label: "Waterproofing Experience" },
-        { value: "Seamless Systems", label: "Advanced Liquid Membranes" },
+        { value: "Waterproofing Systems", label: "UV & Weather resistance" },
         { value: "Fast Curing", label: "Rain-Safe Within Hours" },
       ]}
       faqs={[
