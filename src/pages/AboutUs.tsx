@@ -202,9 +202,7 @@ export default function AboutUs() {
                 Safety Compliance Standards & Solid Supplier Network
               </h3>
               <p className="text-white/60 mb-8 leading-relaxed">
-                ALPS Contractors operates under strict Health & Safety systems
-                to protect our team and your property. We are Site Safe members
-                and Site Wise certified.
+                At ALPS Contractors, safety is non‑negotiable. Our strict Health & Safety systems protect our people and your property, backed by our Site Safe membership and SiteWise certification.
               </p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {[

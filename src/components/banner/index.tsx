@@ -2,7 +2,8 @@ import Facebook from "@/assets/logo/facebook";
 import Linkedin from "@/assets/logo/linkedin";
 import { DATA } from "@/data";
 import { 
-    Phone, Mail, MapPin
+    Phone, Mail, MapPin,
+    Instagram
 } from "lucide-react";
 
 
@@ -31,7 +32,7 @@ const Banner = () => {
         <div className="flex gap-4 items-center">
           <div className="flex gap-3 pr-4">
             <a
-              href="https://facebook.com/alps"
+              href="https://www.facebook.com/share/1CJXK9ibnd/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-accent transition-colors"
@@ -39,7 +40,15 @@ const Banner = () => {
               <Facebook className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com/company/alps"
+              href="https://www.instagram.com/alpscontractors?igsh=ZnRqdWRwcWhxdTAy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-accent transition-colors"
+            >
+              <Instagram className="w-5 h-5" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/alpscontractors/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-accent transition-colors"
