@@ -49,7 +49,7 @@ const SealantSiliconeApplication = () => {
         subtitle="Professional joint sealing and waterproofing for residential, commercial, and industrial buildings across Auckland"
         stats={[
         { value: "25+ Years", label: "Industrial Experience" },
-        { value: "Range of Solutions", label: "Fire-rated &amp; Flexible" },
+        { value: "Range of Solutions", label: "Fire-rated & Flexible" },
         { value: "Weather Resistance", label: "Moisture, Rain, Humidity" },
       ]}
         descriptionTitle="Why Proper Joint Sealing Matters"
