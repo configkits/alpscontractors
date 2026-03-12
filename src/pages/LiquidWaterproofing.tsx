@@ -14,7 +14,7 @@ export default function LiquidWaterproofing() {
       title="Liquid Waterproofing Solutions"
       subtitle="Protect your property with expert waterproofing services in Auckland & surrounds."
       descriptionTitle="Expert Liquid Waterproofing Systems"
-      description="Alps Contractors, Auckland, provides high-quality liquid waterproofing solutions backed by over 25 years of experience. Our liquid-applied systems create seamless, fully bonded membranes that prevent water ingress while resisting UV exposure, weathering, and surface wear. Suitable for roofs, balconies, terraces, planter boxes, and wet areas, we tailor each application to your substrate and project needs—working across concrete, timber, bitumen, zinc, and stone surfaces for durable, long-lasting protection."
+      description="Alps Contractors, Auckland, provides high-quality liquid waterproofing solutions backed by over 25 years of experience. Our liquid-applied systems create seamless, fully bonded membranes that prevent water ingress while resisting UV exposure, weathering, and surface wear. Suitable for roofs, balconies, terraces, planter boxes, and wet areas, we tailor each application to your substrate and project needs working across concrete, timber, bitumen, zinc, and stone surfaces for durable, long-lasting protection."
       features={[
         {
           title: "Seamless Waterproof Solutions",
@@ -101,7 +101,7 @@ export default function LiquidWaterproofing() {
       contentImage={image1}
       contentImage2={image2}
       descriptionTitle2="Why Choose Alps Contractors"
-      description2="With decades of experience, Alps Contractors delivers liquid waterproofing solutions designed for performance, safety, and longevity. We provide expert advice tailored to your project—whether you need UV resistance, elasticity for movement, or chemical durability. From consultation to installation and maintenance, our focus is on reliable protection, environmentally responsible systems, and professional results delivered on time and within budget."
+      description2="With decades of experience, Alps Contractors delivers liquid waterproofing solutions designed for performance, safety, and longevity. We provide expert advice tailored to your project whether you need UV resistance, elasticity for movement, or chemical durability. From consultation to installation and maintenance, our focus is on reliable protection, environmentally responsible systems, and professional results delivered on time and within budget."
     />
     <Footer />
     </div>

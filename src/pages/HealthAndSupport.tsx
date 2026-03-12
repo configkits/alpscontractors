@@ -1,11 +1,11 @@
 
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
-import aboutus from "../assets/helpandSupport/IMG_3683.webp"
+import aboutus from "../assets/helpandSupport/h&s1.jpeg"
 import { DATA } from "@/data";
 
 import healthandsafety from "@/assets/5-1920w.jpg";
-import heroImg from "../assets/helpandSupport/IMG_3684.webp";
+import heroImg from "../assets/helpandSupport/h&s2.jpeg";
 import { Plus } from "lucide-react";
 
 const HealthandSupport = () => {

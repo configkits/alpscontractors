@@ -15,7 +15,7 @@ export default function IndustrialResin() {
       title="Industrial Resin Flooring Solutions"
       subtitle="Durable, stylish & practical resin floors in Auckland & surrounds."
       descriptionTitle="Expert Epoxy Resin Flooring Installers"
-      description="Alps Contractors, Auckland, has over 25 years of experience delivering high-performance epoxy resin flooring systems that are durable, versatile, and cost-effective. Epoxy resin is the most widely used resin flooring solution due to its strength, longevity, and adaptability across industrial, commercial, and residential environments. Whether you require a seamless warehouse floor, a hygienic coating for food facilities, or a heavy-duty solution for workshops and garages, our experienced team ensures each floor is tailored to your specific requirements—providing a surface that performs exceptionally while maintaining an attractive finish."
+      description="Alps Contractors, Auckland, has over 25 years of experience delivering high-performance epoxy resin flooring systems that are durable, versatile, and cost-effective. Epoxy resin is the most widely used resin flooring solution due to its strength, longevity, and adaptability across industrial, commercial, and residential environments. Whether you require a seamless warehouse floor, a hygienic coating for food facilities, or a heavy-duty solution for workshops and garages, our experienced team ensures each floor is tailored to your specific requirements providing a surface that performs exceptionally while maintaining an attractive finish."
       features={[
         {
           title: "Epoxy Resin Flooring",
@@ -84,7 +84,7 @@ export default function IndustrialResin() {
       cta={{
         title: "WHY CHOOSE ALPS CONTRACTORS",
         description:
-          "Alps Contractors, Auckland, delivers high-performance resin flooring built for durability and longevity. We use trusted brands like Sika, Mapei, Flowcrete, Allnex, and Equus to ensure proven quality on every project. From consultation to installation and maintenance, our experienced team provides practical solutions tailored to your needs—giving you a safe, reliable floor that stands up to demanding environments.",
+          "Alps Contractors, Auckland, delivers high-performance resin flooring built for durability and longevity. We use trusted brands like Sika, Mapei, Flowcrete, Allnex, and Equus to ensure proven quality on every project. From consultation to installation and maintenance, our experienced team provides practical solutions tailored to your needs giving you a safe, reliable floor that stands up to demanding environments.",
       }}
       contentImage={image1}
       contentImage2={image2}
