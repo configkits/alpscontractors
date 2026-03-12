@@ -22,13 +22,13 @@ export default function OurWork() {
             Showcasing Our Expert Work – ALPS Contractors Projects in Auckland &
             Surrounds
           </h1>
-          <h1 className="text-4xl md:text-6xl font-serif text-primary mb-8">
+          <h1 className="text-4xl md:text-6xl font-serif text-primary mb-12">
             Our Work
           </h1>
-          <p className="text-xl text-muted-foreground mb-12  leading-relaxed">
+          {/* <p className="text-xl text-muted-foreground mb-12  leading-relaxed">
             Choosing{" "}
             <span className="font-bold text-accent">
-              Alps Contractors, Auckland
+              Alps Contractors, Aucklandz
             </span>
             , means choosing a team that takes pride in delivering flooring
             solutions built for performance and longevity. We only use trusted
@@ -41,7 +41,7 @@ export default function OurWork() {
             durable resin flooring that meets your exact needs. With epoxy resin
             flooring from Alps Contractors, you can be confident your floor will
             stand up to whatever demands are placed on it.
-          </p>
+          </p> */}
           <div className="grid md:grid-cols-4 gap-8">
             {DATA.work.map((project, i) => (
               <div
