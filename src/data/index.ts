@@ -2,7 +2,7 @@ import Sika from "../assets/parters/g6-640w.png";
 import flowcreate from "../assets/parters/Group-2-1-640w.png";
 import mapei from "../assets/parters/Group-3-1-640w.png";
 import carboline from "../assets/parters/Group-1-1-640w.png";
-import cohe from "../assets/parters/cohe-logo.png.webp";
+import cohe from "../assets/parters/coho-logo.jpeg";
 import polymer from "../assets/parters/Polymer-web-logo-1030x596-1.png";
 import resene from "../assets/parters/resene-logo.webp";
 import cotec from "../assets/parters/Screenshot_2026-02-22_at_20.32.13-removebg-preview.png";

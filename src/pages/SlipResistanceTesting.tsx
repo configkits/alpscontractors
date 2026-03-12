@@ -56,7 +56,7 @@ const SlipResistanceTesting = () => {
                 Regular slip compliance testing is a vital part of workplace
                 safety and risk management. Our certified testing gives you
                 peace of mind that your floors meet and maintain New Zealand’s
-                slip resistance standards—helping to prevent costly accidents
+                slip resistance standards helping to prevent costly accidents
                 and ensure compliance.
               </p>
             </div>

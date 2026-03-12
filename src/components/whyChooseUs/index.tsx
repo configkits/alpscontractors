@@ -9,7 +9,7 @@ const WhyChooseUs = () => {
             <h2 className="text-xs font-bold text-accent uppercase tracking-[0.4em] mb-6">The ALPS Advantage</h2>
             <h3 className="text-3xl md:text-5xl font-serif text-primary mb-8">Why Choose Us?</h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Our commitment to quality craftsmanship, technical expertise, and long-lasting performance ensures every project meets the highest standards—giving you confidence and peace of mind.
+              Our commitment to quality craftsmanship, technical expertise, and long-lasting performance ensures every project meets the highest standards giving you confidence and peace of mind.
             </p>
           </div>
 
