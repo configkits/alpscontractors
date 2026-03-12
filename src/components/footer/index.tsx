@@ -1,7 +1,8 @@
 import { Link } from "wouter";
 import {  
   Phone, 
-  Mail,  
+  Mail,
+  Instagram,  
 } from "lucide-react";
 import logo from "../../assets/alpslogo-white.png";
 import { DATA } from "@/data";
@@ -118,6 +119,14 @@ const Footer = () => {
                   className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent-foreground transition-all group"
                 >
                   <Facebook
+                    className="text-white h-8 w-8 group-hover:scale-110 transition-transform"
+                  />
+                </a>
+                <a
+                  href={DATA.instagram}
+                  className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-accent-foreground transition-all group"
+                >
+                  <Instagram
                     className="text-white h-8 w-8 group-hover:scale-110 transition-transform"
                   />
                 </a>

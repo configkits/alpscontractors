@@ -12,7 +12,8 @@ import { DATA } from "@/data";
 import { Clock, Earth, Mail, PhoneCall } from "lucide-react";
 
 type FormData = {
-  name: string;
+  firstName: string;
+  lastName: string;
   email: string;
   location: string;
   message: string;
@@ -21,7 +22,8 @@ type FormData = {
 export default function Contact() {
 
   const [form, setForm] = useState<FormData>({
-    name: "",
+    firstName: "",
+    lastName: "",
     email: "",
     location: "",
     message: "",
@@ -42,7 +44,7 @@ export default function Contact() {
   const subject = encodeURIComponent("New Project Inquiry");
 
   const body = encodeURIComponent(
-    `Name: ${form.name}
+    `Name: ${form.firstName} ${form.lastName}
     Email: ${form.email}
     Location: ${form.location}
 
@@ -80,33 +82,41 @@ export default function Contact() {
           <form 
           onSubmit={handleSubmit}
           className="grid gap-6 bg-muted/30 p-6 md:p-10 rounded-2xl border border-border">
-            {/* Name + Email */}
+            {/* First & Last Name (same row on md+) */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex flex-col gap-2">
-                <label className="text-sm font-medium text-primary">
-                  Full Name
-                </label>
+                <label className="text-sm font-medium text-primary">First Name</label>
                 <Input
-                  name="name"
-                  value={form.name}
-                  placeholder="Enter your full name"
+                  name="firstName"
+                  value={form.firstName}
+                  placeholder="Enter your first name"
                   className="bg-white w-full"
                   onChange={handleChange}
                 />
               </div>
 
               <div className="flex flex-col gap-2">
-                <label className="text-sm font-medium text-primary">
-                  Email Address
-                </label>
+                <label className="text-sm font-medium text-primary">Last Name</label>
                 <Input
-                  name="email"
-                  value={form.email}
-                  placeholder="Enter your email"
+                  name="lastName"
+                  value={form.lastName}
+                  placeholder="Enter your last name"
                   className="bg-white w-full"
                   onChange={handleChange}
                 />
               </div>
+            </div>
+
+            {/* Email (full width next row) */}
+            <div className="flex flex-col gap-2">
+              <label className="text-sm font-medium text-primary">Email Address</label>
+              <Input
+                name="email"
+                value={form.email}
+                placeholder="Enter your email"
+                className="bg-white w-full"
+                onChange={handleChange}
+              />
             </div>
 
             {/* Location */}
