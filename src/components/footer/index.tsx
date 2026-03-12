@@ -109,7 +109,7 @@ const Footer = () => {
               <li className="flex items-center justify-center sm:justify-start gap-3 ">
                 <Mail size={14} className="text-accent" />{" "}
                 <a href={`mailto:${DATA.email}`} className="hover:text-accent-foreground">
-                info@alps-contractors.co.nz
+                info@alpscontractors.co.nz
                 </a>
               </li>
               <li className="flex gap-4 mt-6 justify-center sm:justify-start">
